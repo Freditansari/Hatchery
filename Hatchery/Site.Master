@@ -6,7 +6,7 @@
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> -Hatchery Management System</title>
     <asp:PlaceHolder runat="server">     
           <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>  
@@ -66,7 +66,7 @@
              
                 </section>
                 <nav>
-                    <telerik:RadMenu ID="RadMenu1" Runat="server">
+                    <telerik:RadMenu ID="RadMenu1" Runat="server" style="top: 0px; left: 0px">
                                     <Items>
                                         <telerik:RadMenuItem runat="server" Text="Broodstock">
                                             <Items>
@@ -82,15 +82,17 @@
                                             <Items>
                                                 <telerik:RadMenuItem runat="server" Text="Production Cycle" NavigateUrl="~/ProductionCycle.aspx">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/PLMonitor.aspx" Text="Postlarvae Monitor">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/PLMonitor.aspx" Text="Postlarvae Monitor">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WaterParameterForm.aspx" Text="Water Parameter">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Modules">
                                         </telerik:RadMenuItem>
-                                        <telerik:RadMenuItem runat="server" Text="Root RadMenuItem4">
+                                        <telerik:RadMenuItem runat="server" Text="Root RadMenuItem4" NavigateUrl="~/WebForm8.aspx">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/WebForm8.aspx" Text="Child RadMenuItem 1">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WebForm8.aspx" Text="Child RadMenuItem 1">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
@@ -117,7 +119,7 @@
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Hatchery Management System</p>
             </div>
         </div>
     </footer>

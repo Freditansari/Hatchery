@@ -24,8 +24,9 @@ namespace Hatchery
         public Nullable<double> NH3 { get; set; }
         public Nullable<double> Salinity { get; set; }
         public Nullable<double> DO { get; set; }
+        public string Algae { get; set; }
         public string Remark { get; set; }
         public string userID { get; set; }
-        public string Algae { get; set; }
+        public Nullable<double> N { get; set; }
     }
 }

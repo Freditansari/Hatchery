@@ -8,7 +8,6 @@
     <EntitySet Name="MasterModules" EntityType="HatcheryModel.MasterModule" />
     <EntitySet Name="MasterStages" EntityType="HatcheryModel.MasterStage" />
     <EntitySet Name="ProductionCycles" EntityType="HatcheryModel.ProductionCycle" />
-    <EntitySet Name="WaterParameterPostLarvas" EntityType="HatcheryModel.WaterParameterPostLarva" />
     <AssociationSet Name="FK__DailyMoni__Modul__35BCFE0A" Association="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A">
       <End Role="MasterModule" EntitySet="MasterModules" />
       <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkaps" />
@@ -26,6 +25,7 @@
       <End Role="ProductionCycle" EntitySet="ProductionCycles" />
     </AssociationSet>
     <EntitySet Name="DailyMonitoringPostLarvas" EntityType="HatcheryModel.DailyMonitoringPostLarva" />
+    <EntitySet Name="WaterParameterPostLarvas" EntityType="HatcheryModel.WaterParameterPostLarva" />
   </EntityContainer>
   <EntityType Name="BroodStockMonitoring">
     <Key>
@@ -184,24 +184,6 @@
     <NavigationProperty Name="Harvests" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="ProductionCycle" ToRole="Harvest" />
     <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__Productio__Modul__31EC6D26" FromRole="ProductionCycle" ToRole="MasterModule" />
   </EntityType>
-  <EntityType Name="WaterParameterPostLarva">
-    <Key>
-      <PropertyRef Name="WaterParameterID" />
-    </Key>
-    <Property Name="WaterParameterID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="ModuleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="ProductionCycleID" Type="Int32" />
-    <Property Name="Date" Type="DateTime" Precision="3" />
-    <Property Name="Alkalinty" Type="Double" />
-    <Property Name="Temperature" Type="Double" />
-    <Property Name="PH" Type="Double" />
-    <Property Name="NH3" Type="Double" />
-    <Property Name="Salinity" Type="Double" />
-    <Property Name="DO" Type="Double" />
-    <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <Property Name="userID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
-    <Property Type="String" Name="Algae" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
   <Association Name="FK__DailyMoni__Modul__35BCFE0A">
     <End Role="MasterModule" Type="HatcheryModel.MasterModule" Multiplicity="0..1" />
     <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
@@ -293,5 +275,24 @@
     <Property Type="Double" Name="Probiotik" />
     <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="userID" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WaterParameterPostLarva">
+    <Key>
+      <PropertyRef Name="WaterParameterID" />
+    </Key>
+    <Property Type="Int32" Name="WaterParameterID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ModuleName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ProductionCycleID" />
+    <Property Type="DateTime" Name="Date" Precision="3" />
+    <Property Type="Double" Name="Alkalinty" />
+    <Property Type="Double" Name="Temperature" />
+    <Property Type="Double" Name="PH" />
+    <Property Type="Double" Name="NH3" />
+    <Property Type="Double" Name="Salinity" />
+    <Property Type="Double" Name="DO" />
+    <Property Type="String" Name="Algae" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="userID" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="N" />
   </EntityType>
 </Schema>

@@ -116,6 +116,8 @@
     <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Reporting, Version=9.0.15.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=9.0.15.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
     <Reference Include="Telerik.Web.UI">
       <HintPath>..\lib\RCAJAX\2015.3.930.45\Telerik.Web.UI.dll</HintPath>
     </Reference>
@@ -234,7 +236,8 @@
     <Content Include="broodstockMonitoring.aspx" />
     <Content Include="ProductionCycle.aspx" />
     <Content Include="PLMonitor.aspx" />
-    <Content Include="Managers\WebForm8.aspx" />
+    <Content Include="WaterParameterForm.aspx" />
+    <Content Include="WebForm8.aspx" />
     <EntityDeploy Include="HatcheryDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HatcheryDataModel.Designer.cs</LastGenOutput>
@@ -252,6 +255,7 @@
       <DependentUpon>HatcheryDataModel.edmx</DependentUpon>
       <LastGenOutput>HatcheryDataModel.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\PublishProfiles\Hatchery.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -458,16 +462,24 @@
     <Compile Include="WaterParameterPostLarva.cs">
       <DependentUpon>HatcheryDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Managers\WebForm8.aspx.cs">
+    <Compile Include="WaterParameterForm.aspx.cs">
+      <DependentUpon>WaterParameterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WaterParameterForm.aspx.designer.cs">
+      <DependentUpon>WaterParameterForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm8.aspx.cs">
       <DependentUpon>WebForm8.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Managers\WebForm8.aspx.designer.cs">
+    <Compile Include="WebForm8.aspx.designer.cs">
       <DependentUpon>WebForm8.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Managers\" />
     <Folder Include="Technicians\" />
   </ItemGroup>
   <ItemGroup>

@@ -251,6 +251,7 @@
     <Property Name="Algae" Type="nvarchar" MaxLength="50" />
     <Property Name="Remark" Type="nvarchar(max)" />
     <Property Name="userID" Type="nvarchar" MaxLength="255" />
+    <Property Name="N" Type="float" />
   </EntityType>
   <Association Name="FK__DailyMoni__Modul__35BCFE0A">
     <End Role="MasterModule" Type="HatcheryModel.Store.MasterModule" Multiplicity="0..1" />

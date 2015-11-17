@@ -32,7 +32,7 @@ namespace Hatchery
         public DbSet<MasterModule> MasterModules { get; set; }
         public DbSet<MasterStage> MasterStages { get; set; }
         public DbSet<ProductionCycle> ProductionCycles { get; set; }
-        public DbSet<WaterParameterPostLarva> WaterParameterPostLarvas { get; set; }
         public DbSet<DailyMonitoringPostLarva> DailyMonitoringPostLarvas { get; set; }
+        public DbSet<WaterParameterPostLarva> WaterParameterPostLarvas { get; set; }
     }
 }

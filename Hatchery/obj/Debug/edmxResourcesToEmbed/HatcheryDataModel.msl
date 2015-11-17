@@ -157,25 +157,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="WaterParameterPostLarvas">
-      <EntityTypeMapping TypeName="HatcheryModel.WaterParameterPostLarva">
-        <MappingFragment StoreEntitySet="WaterParameterPostLarva">
-          <ScalarProperty Name="Algae" ColumnName="Algae" />
-          <ScalarProperty Name="WaterParameterID" ColumnName="WaterParameterID" />
-          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
-          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
-          <ScalarProperty Name="Alkalinty" ColumnName="Alkalinty" />
-          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
-          <ScalarProperty Name="PH" ColumnName="PH" />
-          <ScalarProperty Name="NH3" ColumnName="NH3" />
-          <ScalarProperty Name="Salinity" ColumnName="Salinity" />
-          <ScalarProperty Name="DO" ColumnName="DO" />
-          <ScalarProperty Name="Remark" ColumnName="Remark" />
-          <ScalarProperty Name="userID" ColumnName="userID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="DailyMonitoringPostLarvas">
       <EntityTypeMapping TypeName="HatcheryModel.DailyMonitoringPostLarva">
         <MappingFragment StoreEntitySet="DailyMonitoringPostLarva">
@@ -218,6 +199,26 @@
           <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
           <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
           <ScalarProperty Name="PostLarvaID" ColumnName="PostLarvaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaterParameterPostLarvas">
+      <EntityTypeMapping TypeName="HatcheryModel.WaterParameterPostLarva">
+        <MappingFragment StoreEntitySet="WaterParameterPostLarva">
+          <ScalarProperty Name="N" ColumnName="N" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Algae" ColumnName="Algae" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+          <ScalarProperty Name="NH3" ColumnName="NH3" />
+          <ScalarProperty Name="PH" ColumnName="PH" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="Alkalinty" ColumnName="Alkalinty" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="WaterParameterID" ColumnName="WaterParameterID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

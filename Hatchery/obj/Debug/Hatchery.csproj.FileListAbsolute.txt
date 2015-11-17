@@ -43,7 +43,7 @@ C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\bin\Teler
 C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\bin\Telerik.Windows.Maths.xml
 C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\bin\Telerik.Windows.Zip.xml
 C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\obj\Debug\Hatchery.csprojResolveAssemblyReference.cache
 C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\obj\Debug\Hatchery.dll.licenses
 C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\obj\Debug\Hatchery.dll
 C:\Users\fredy\Documents\visual studio 2012\Projects\Hatchery\Hatchery\obj\Debug\Hatchery.pdb
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\obj\Debug\Hatchery.csprojResolveAssemblyReference.cache
