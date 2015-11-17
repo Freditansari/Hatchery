@@ -52,7 +52,21 @@
                                 <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a>
                                     <br />
-                                    <telerik:RadMenu ID="RadMenu1" Runat="server">
+                                </li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <p>
+                                Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                    <asp:LoginName runat="server" CssClass="username" /></a>!
+                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
+                            </p>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+             
+                </section>
+                <nav>
+                    <telerik:RadMenu ID="RadMenu1" Runat="server">
                                     <Items>
                                         <telerik:RadMenuItem runat="server" Text="Broodstock">
                                             <Items>
@@ -68,36 +82,30 @@
                                             <Items>
                                                 <telerik:RadMenuItem runat="server" Text="Production Cycle" NavigateUrl="~/ProductionCycle.aspx">
                                                 </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/PLMonitor.aspx" Text="Postlarvae Monitor">
+                                                </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Modules">
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Root RadMenuItem4">
+                                            <Items>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/WebForm8.aspx" Text="Child RadMenuItem 1">
+                                                </telerik:RadMenuItem>
+                                            </Items>
                                         </telerik:RadMenuItem>
                                     </Items>
                                     </telerik:RadMenu>
-                                </li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" /></a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-              <%--  <nav>
-                    <ul id="menu">
+                   <%-- <ul id="menu">
                  
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><a id="A1" runat="server" href="~/Broodstock">Broodstock</a></li>
-                    </ul>
-                </nav>--%>
+                    </ul>--%>
+                </nav>
             </div>
+                                    
         </div>
     </header>
     <div id="body">

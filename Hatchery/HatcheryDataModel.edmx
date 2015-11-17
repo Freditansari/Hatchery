@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HatcheryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="HatcheryModelStoreContainer">
+          <EntitySet Name="BroodStockMonitoring" EntityType="HatcheryModel.Store.BroodStockMonitoring" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DailyMonitoringPostLarva" EntityType="HatcheryModel.Store.DailyMonitoringPostLarva" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DailyMonitoringPostLarvaLengkap" EntityType="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Harvest" EntityType="HatcheryModel.Store.Harvest" store:Type="Tables" store:Schema="dbo" store:Name="Harvest">
+            <DefiningQuery>SELECT 
+      [Harvest].[HarvestID] AS [HarvestID], 
+      [Harvest].[ProductionCycleID] AS [ProductionCycleID], 
+      [Harvest].[DOC] AS [DOC], 
+      [Harvest].[Stage] AS [Stage], 
+      [Harvest].[HarvestedPopulation] AS [HarvestedPopulation], 
+      [Harvest].[Date] AS [Date], 
+      [Harvest].[Time] AS [Time], 
+      [Harvest].[userid] AS [userid]
+      FROM [dbo].[Harvest] AS [Harvest]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MasterBatch" EntityType="HatcheryModel.Store.MasterBatch" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MasterModule" EntityType="HatcheryModel.Store.MasterModule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MasterStages" EntityType="HatcheryModel.Store.MasterStages" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProductionCycle" EntityType="HatcheryModel.Store.ProductionCycle" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WaterParameterPostLarva" EntityType="HatcheryModel.Store.WaterParameterPostLarva" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__DailyMoni__Modul__35BCFE0A" Association="HatcheryModel.Store.FK__DailyMoni__Modul__35BCFE0A">
+            <End Role="MasterModule" EntitySet="MasterModule" />
+            <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkap" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DailyMoni__Produ__2E1BDC42" Association="HatcheryModel.Store.FK__DailyMoni__Produ__2E1BDC42">
+            <End Role="ProductionCycle" EntitySet="ProductionCycle" />
+            <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkap" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.Store.FK__Harvest__Product__2F10007B">
+            <End Role="ProductionCycle" EntitySet="ProductionCycle" />
+            <End Role="Harvest" EntitySet="Harvest" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Productio__Modul__31EC6D26" Association="HatcheryModel.Store.FK__Productio__Modul__31EC6D26">
+            <End Role="MasterModule" EntitySet="MasterModule" />
+            <End Role="ProductionCycle" EntitySet="ProductionCycle" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BroodStockMonitoring">
+          <Key>
+            <PropertyRef Name="BSMID" />
+          </Key>
+          <Property Name="BSMID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Batch" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Male" Type="int" />
+          <Property Name="Female" Type="int" />
+          <Property Name="DeadMale" Type="int" />
+          <Property Name="DeadFemale" Type="int" />
+          <Property Name="Salinity" Type="float" />
+          <Property Name="MatTemp" Type="float" />
+          <Property Name="HatcTemp" Type="float" />
+          <Property Name="DO" Type="float" />
+          <Property Name="PH" Type="float" />
+          <Property Name="PolychaeteIn" Type="float" />
+          <Property Name="PolychaeteUsed" Type="float" />
+          <Property Name="PolychaeteBalance" Type="float" />
+          <Property Name="SquidIn" Type="float" />
+          <Property Name="SquidUsed" Type="float" />
+          <Property Name="SquidiBalance" Type="float" />
+          <Property Name="FR" Type="float" />
+          <Property Name="EDTA" Type="float" />
+          <Property Name="Formaldehyde" Type="float" />
+          <Property Name="Treflan" Type="float" />
+          <Property Name="Iodine" Type="float" />
+          <Property Name="Vitamin" Type="float" />
+          <Property Name="Matured" Type="int" />
+          <Property Name="Mated" Type="int" />
+          <Property Name="Spawned" Type="int" />
+          <Property Name="Egg" Type="float" />
+          <Property Name="NaupliiBruto" Type="float" />
+          <Property Name="NaupliiNetto" Type="float" />
+          <Property Name="Flush" Type="float" />
+          <Property Name="Distribution" Type="nvarchar" MaxLength="200" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="userID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="DailyMonitoringPostLarva">
+          <Key>
+            <PropertyRef Name="PostLarvaID" />
+          </Key>
+          <Property Name="PostLarvaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductionCycleID" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="DOC" Type="int" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="50" />
+          <Property Name="Population" Type="int" />
+          <Property Name="BiosZ" Type="float" />
+          <Property Name="BiosM" Type="float" />
+          <Property Name="Bios100" Type="float" />
+          <Property Name="Bios150" Type="float" />
+          <Property Name="LanzyPL" Type="float" />
+          <Property Name="LanzyMPL" Type="float" />
+          <Property Name="LanzyZM" Type="float" />
+          <Property Name="MPZ" Type="float" />
+          <Property Name="MP1" Type="float" />
+          <Property Name="MP2" Type="float" />
+          <Property Name="MP3" Type="float" />
+          <Property Name="MPL" Type="float" />
+          <Property Name="Spirulina" Type="float" />
+          <Property Name="LHF" Type="float" />
+          <Property Name="RoySF100-200" Type="float" />
+          <Property Name="RoySF200-300" Type="float" />
+          <Property Name="TzuFeng" Type="float" />
+          <Property Name="Artemia" Type="float" />
+          <Property Name="ArtemiaEZ1" Type="float" />
+          <Property Name="ArtemiaEZ2" Type="float" />
+          <Property Name="Activity" Type="float" />
+          <Property Name="Length" Type="float" />
+          <Property Name="STDEV" Type="float" />
+          <Property Name="FGC" Type="float" />
+          <Property Name="Necrosis" Type="float" />
+          <Property Name="Fouling" Type="float" />
+          <Property Name="Parasite" Type="float" />
+          <Property Name="MGR" Type="float" />
+          <Property Name="Treflan" Type="float" />
+          <Property Name="Probiotik" Type="float" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="userID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="DailyMonitoringPostLarvaLengkap">
+          <Key>
+            <PropertyRef Name="MID" />
+          </Key>
+          <Property Name="MID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductionCycleID" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="DOC" Type="int" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="50" />
+          <Property Name="Population" Type="int" />
+          <Property Name="BiosZ" Type="float" />
+          <Property Name="BiosM" Type="float" />
+          <Property Name="Bios100" Type="float" />
+          <Property Name="Bios150" Type="float" />
+          <Property Name="LanzyPL" Type="float" />
+          <Property Name="LanzyMPL" Type="float" />
+          <Property Name="LanzyZM" Type="float" />
+          <Property Name="MPZ" Type="float" />
+          <Property Name="MP1" Type="float" />
+          <Property Name="MP2" Type="float" />
+          <Property Name="MP3" Type="float" />
+          <Property Name="MPL" Type="float" />
+          <Property Name="Spirulina" Type="float" />
+          <Property Name="LHF" Type="float" />
+          <Property Name="RoySF100-200" Type="float" />
+          <Property Name="RoySF200-300" Type="float" />
+          <Property Name="TzuFeng" Type="float" />
+          <Property Name="Artemia" Type="float" />
+          <Property Name="ArtemiaEZ1" Type="float" />
+          <Property Name="ArtemiaEZ2" Type="float" />
+          <Property Name="Activity" Type="float" />
+          <Property Name="Length" Type="float" />
+          <Property Name="STDEV" Type="float" />
+          <Property Name="FGC" Type="float" />
+          <Property Name="Necrosis" Type="float" />
+          <Property Name="Fouling" Type="float" />
+          <Property Name="Parasite" Type="float" />
+          <Property Name="MGR" Type="float" />
+          <Property Name="AlgaeMorning" Type="nvarchar" MaxLength="50" />
+          <Property Name="AlgaeEvening" Type="nvarchar" MaxLength="50" />
+          <Property Name="Alkalinty" Type="float" />
+          <Property Name="TemperatureMorning" Type="float" />
+          <Property Name="TemperatureEvening" Type="float" />
+          <Property Name="PH" Type="float" />
+          <Property Name="NH3" Type="float" />
+          <Property Name="Salinity" Type="float" />
+          <Property Name="DOMorning" Type="float" />
+          <Property Name="DOEvening" Type="float" />
+          <Property Name="Treflan" Type="float" />
+          <Property Name="Probiotik" Type="float" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="userID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Hatchery.dbo.Harvest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Harvest">
+          <Key>
+            <PropertyRef Name="HarvestID" />
+          </Key>
+          <Property Name="HarvestID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductionCycleID" Type="int" />
+          <Property Name="DOC" Type="int" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="50" />
+          <Property Name="HarvestedPopulation" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Time" Type="time" />
+          <Property Name="userid" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="MasterBatch">
+          <Key>
+            <PropertyRef Name="BatchNumber" />
+          </Key>
+          <Property Name="BatchNumber" Type="int" Nullable="false" />
+          <Property Name="IsTerminated" Type="bit" Nullable="false" />
+          <Property Name="ReceivedDate" Type="date" />
+          <Property Name="TerminationDate" Type="date" />
+          <Property Name="Note" Type="varchar(max)" />
+          <Property Name="userID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="MasterModule">
+          <Key>
+            <PropertyRef Name="ModuleName" />
+          </Key>
+          <Property Name="ModuleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Tonnage" Type="float" />
+          <Property Name="Volume" Type="float" />
+          <Property Name="Area" Type="float" />
+          <Property Name="Depth" Type="float" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="MasterStages">
+          <Key>
+            <PropertyRef Name="DOC" />
+          </Key>
+          <Property Name="DOC" Type="int" Nullable="false" />
+          <Property Name="Stage" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ProductionCycle">
+          <Key>
+            <PropertyRef Name="ProductionCycleID" />
+          </Key>
+          <Property Name="ProductionCycleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="Nauplii" Type="float" />
+          <Property Name="Batch" Type="int" />
+          <Property Name="isInProduction" Type="bit" />
+          <Property Name="EndDate" Type="date" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="WaterParameterPostLarva">
+          <Key>
+            <PropertyRef Name="WaterParameterID" />
+          </Key>
+          <Property Name="WaterParameterID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductionCycleID" Type="int" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Alkalinty" Type="float" />
+          <Property Name="Temperature" Type="float" />
+          <Property Name="PH" Type="float" />
+          <Property Name="NH3" Type="float" />
+          <Property Name="Salinity" Type="float" />
+          <Property Name="DO" Type="float" />
+          <Property Name="Algae" Type="nvarchar" MaxLength="50" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="userID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK__DailyMoni__Modul__35BCFE0A">
+          <End Role="MasterModule" Type="HatcheryModel.Store.MasterModule" Multiplicity="0..1" />
+          <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MasterModule">
+              <PropertyRef Name="ModuleName" />
+            </Principal>
+            <Dependent Role="DailyMonitoringPostLarvaLengkap">
+              <PropertyRef Name="ModuleName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DailyMoni__Produ__2E1BDC42">
+          <End Role="ProductionCycle" Type="HatcheryModel.Store.ProductionCycle" Multiplicity="0..1" />
+          <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductionCycle">
+              <PropertyRef Name="ProductionCycleID" />
+            </Principal>
+            <Dependent Role="DailyMonitoringPostLarvaLengkap">
+              <PropertyRef Name="ProductionCycleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Harvest__Product__2F10007B">
+          <End Role="ProductionCycle" Type="HatcheryModel.Store.ProductionCycle" Multiplicity="0..1" />
+          <End Role="Harvest" Type="HatcheryModel.Store.Harvest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductionCycle">
+              <PropertyRef Name="ProductionCycleID" />
+            </Principal>
+            <Dependent Role="Harvest">
+              <PropertyRef Name="ProductionCycleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Productio__Modul__31EC6D26">
+          <End Role="MasterModule" Type="HatcheryModel.Store.MasterModule" Multiplicity="0..1" />
+          <End Role="ProductionCycle" Type="HatcheryModel.Store.ProductionCycle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MasterModule">
+              <PropertyRef Name="ModuleName" />
+            </Principal>
+            <Dependent Role="ProductionCycle">
+              <PropertyRef Name="ModuleName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HatcheryModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="HatcheryEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="BroodStockMonitorings" EntityType="HatcheryModel.BroodStockMonitoring" />
+          <EntitySet Name="DailyMonitoringPostLarvaLengkaps" EntityType="HatcheryModel.DailyMonitoringPostLarvaLengkap" />
+          <EntitySet Name="Harvests" EntityType="HatcheryModel.Harvest" />
+          <EntitySet Name="MasterBatches" EntityType="HatcheryModel.MasterBatch" />
+          <EntitySet Name="MasterModules" EntityType="HatcheryModel.MasterModule" />
+          <EntitySet Name="MasterStages" EntityType="HatcheryModel.MasterStage" />
+          <EntitySet Name="ProductionCycles" EntityType="HatcheryModel.ProductionCycle" />
+          <EntitySet Name="WaterParameterPostLarvas" EntityType="HatcheryModel.WaterParameterPostLarva" />
+          <AssociationSet Name="FK__DailyMoni__Modul__35BCFE0A" Association="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A">
+            <End Role="MasterModule" EntitySet="MasterModules" />
+            <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DailyMoni__Produ__2E1BDC42" Association="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42">
+            <End Role="ProductionCycle" EntitySet="ProductionCycles" />
+            <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.FK__Harvest__Product__2F10007B">
+            <End Role="ProductionCycle" EntitySet="ProductionCycles" />
+            <End Role="Harvest" EntitySet="Harvests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Productio__Modul__31EC6D26" Association="HatcheryModel.FK__Productio__Modul__31EC6D26">
+            <End Role="MasterModule" EntitySet="MasterModules" />
+            <End Role="ProductionCycle" EntitySet="ProductionCycles" />
+          </AssociationSet>
+          <EntitySet Name="DailyMonitoringPostLarvas" EntityType="HatcheryModel.DailyMonitoringPostLarva" />
+        </EntityContainer>
+        <EntityType Name="BroodStockMonitoring">
+          <Key>
+            <PropertyRef Name="BSMID" />
+          </Key>
+          <Property Name="BSMID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Batch" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="Male" Type="Int32" />
+          <Property Name="Female" Type="Int32" />
+          <Property Name="DeadMale" Type="Int32" />
+          <Property Name="DeadFemale" Type="Int32" />
+          <Property Name="Salinity" Type="Double" />
+          <Property Name="MatTemp" Type="Double" />
+          <Property Name="HatcTemp" Type="Double" />
+          <Property Name="DO" Type="Double" />
+          <Property Name="PH" Type="Double" />
+          <Property Name="PolychaeteIn" Type="Double" />
+          <Property Name="PolychaeteUsed" Type="Double" />
+          <Property Name="PolychaeteBalance" Type="Double" />
+          <Property Name="SquidIn" Type="Double" />
+          <Property Name="SquidUsed" Type="Double" />
+          <Property Name="SquidiBalance" Type="Double" />
+          <Property Name="FR" Type="Double" />
+          <Property Name="EDTA" Type="Double" />
+          <Property Name="Formaldehyde" Type="Double" />
+          <Property Name="Treflan" Type="Double" />
+          <Property Name="Iodine" Type="Double" />
+          <Property Name="Vitamin" Type="Double" />
+          <Property Name="Matured" Type="Int32" />
+          <Property Name="Mated" Type="Int32" />
+          <Property Name="Spawned" Type="Int32" />
+          <Property Name="Egg" Type="Double" />
+          <Property Name="NaupliiBruto" Type="Double" />
+          <Property Name="NaupliiNetto" Type="Double" />
+          <Property Name="Flush" Type="Double" />
+          <Property Name="Distribution" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="userID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DailyMonitoringPostLarvaLengkap">
+          <Key>
+            <PropertyRef Name="MID" />
+          </Key>
+          <Property Name="MID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductionCycleID" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="DOC" Type="Int32" />
+          <Property Name="Stage" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Population" Type="Int32" />
+          <Property Name="BiosZ" Type="Double" />
+          <Property Name="BiosM" Type="Double" />
+          <Property Name="Bios100" Type="Double" />
+          <Property Name="Bios150" Type="Double" />
+          <Property Name="LanzyPL" Type="Double" />
+          <Property Name="LanzyMPL" Type="Double" />
+          <Property Name="LanzyZM" Type="Double" />
+          <Property Name="MPZ" Type="Double" />
+          <Property Name="MP1" Type="Double" />
+          <Property Name="MP2" Type="Double" />
+          <Property Name="MP3" Type="Double" />
+          <Property Name="MPL" Type="Double" />
+          <Property Name="Spirulina" Type="Double" />
+          <Property Name="LHF" Type="Double" />
+          <Property Name="RoySF100_200" Type="Double" />
+          <Property Name="RoySF200_300" Type="Double" />
+          <Property Name="TzuFeng" Type="Double" />
+          <Property Name="Artemia" Type="Double" />
+          <Property Name="ArtemiaEZ1" Type="Double" />
+          <Property Name="ArtemiaEZ2" Type="Double" />
+          <Property Name="Activity" Type="Double" />
+          <Property Name="Length" Type="Double" />
+          <Property Name="STDEV" Type="Double" />
+          <Property Name="FGC" Type="Double" />
+          <Property Name="Necrosis" Type="Double" />
+          <Property Name="Fouling" Type="Double" />
+          <Property Name="Parasite" Type="Double" />
+          <Property Name="MGR" Type="Double" />
+          <Property Name="AlgaeMorning" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="AlgaeEvening" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Alkalinty" Type="Double" />
+          <Property Name="TemperatureMorning" Type="Double" />
+          <Property Name="TemperatureEvening" Type="Double" />
+          <Property Name="PH" Type="Double" />
+          <Property Name="NH3" Type="Double" />
+          <Property Name="Salinity" Type="Double" />
+          <Property Name="DOMorning" Type="Double" />
+          <Property Name="DOEvening" Type="Double" />
+          <Property Name="Treflan" Type="Double" />
+          <Property Name="Probiotik" Type="Double" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="userID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A" FromRole="DailyMonitoringPostLarvaLengkap" ToRole="MasterModule" />
+          <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" FromRole="DailyMonitoringPostLarvaLengkap" ToRole="ProductionCycle" />
+        </EntityType>
+        <EntityType Name="Harvest">
+          <Key>
+            <PropertyRef Name="HarvestID" />
+          </Key>
+          <Property Name="HarvestID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductionCycleID" Type="Int32" />
+          <Property Name="DOC" Type="Int32" />
+          <Property Name="Stage" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="HarvestedPopulation" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="Time" Type="Time" Precision="7" />
+          <Property Name="userid" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="Harvest" ToRole="ProductionCycle" />
+        </EntityType>
+        <EntityType Name="MasterBatch">
+          <Key>
+            <PropertyRef Name="BatchNumber" />
+          </Key>
+          <Property Name="BatchNumber" Type="Int32" Nullable="false" />
+          <Property Name="IsTerminated" Type="Boolean" Nullable="false" />
+          <Property Name="ReceivedDate" Type="DateTime" Precision="0" />
+          <Property Name="TerminationDate" Type="DateTime" Precision="0" />
+          <Property Name="Note" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="userID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MasterModule">
+          <Key>
+            <PropertyRef Name="ModuleName" />
+          </Key>
+          <Property Name="ModuleID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Tonnage" Type="Double" />
+          <Property Name="Volume" Type="Double" />
+          <Property Name="Area" Type="Double" />
+          <Property Name="Depth" Type="Double" />
+          <Property Name="UserID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DailyMonitoringPostLarvaLengkaps" Relationship="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A" FromRole="MasterModule" ToRole="DailyMonitoringPostLarvaLengkap" />
+          <NavigationProperty Name="ProductionCycles" Relationship="HatcheryModel.FK__Productio__Modul__31EC6D26" FromRole="MasterModule" ToRole="ProductionCycle" />
+        </EntityType>
+        <EntityType Name="MasterStage">
+          <Key>
+            <PropertyRef Name="DOC" />
+          </Key>
+          <Property Name="DOC" Type="Int32" Nullable="false" />
+          <Property Name="Stage" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="ProductionCycle">
+          <Key>
+            <PropertyRef Name="ProductionCycleID" />
+          </Key>
+          <Property Name="ProductionCycleID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="Nauplii" Type="Double" />
+          <Property Name="Batch" Type="Int32" />
+          <Property Name="isInProduction" Type="Boolean" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
+          <Property Name="UserID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DailyMonitoringPostLarvaLengkaps" Relationship="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" FromRole="ProductionCycle" ToRole="DailyMonitoringPostLarvaLengkap" />
+          <NavigationProperty Name="Harvests" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="ProductionCycle" ToRole="Harvest" />
+          <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__Productio__Modul__31EC6D26" FromRole="ProductionCycle" ToRole="MasterModule" />
+        </EntityType>
+        <EntityType Name="WaterParameterPostLarva">
+          <Key>
+            <PropertyRef Name="WaterParameterID" />
+          </Key>
+          <Property Name="WaterParameterID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ModuleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductionCycleID" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Alkalinty" Type="Double" />
+          <Property Name="Temperature" Type="Double" />
+          <Property Name="PH" Type="Double" />
+          <Property Name="NH3" Type="Double" />
+          <Property Name="Salinity" Type="Double" />
+          <Property Name="DO" Type="Double" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="userID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="Algae" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK__DailyMoni__Modul__35BCFE0A">
+          <End Role="MasterModule" Type="HatcheryModel.MasterModule" Multiplicity="0..1" />
+          <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MasterModule">
+              <PropertyRef Name="ModuleName" />
+            </Principal>
+            <Dependent Role="DailyMonitoringPostLarvaLengkap">
+              <PropertyRef Name="ModuleName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DailyMoni__Produ__2E1BDC42">
+          <End Role="ProductionCycle" Type="HatcheryModel.ProductionCycle" Multiplicity="0..1" />
+          <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductionCycle">
+              <PropertyRef Name="ProductionCycleID" />
+            </Principal>
+            <Dependent Role="DailyMonitoringPostLarvaLengkap">
+              <PropertyRef Name="ProductionCycleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Harvest__Product__2F10007B">
+          <End Role="ProductionCycle" Type="HatcheryModel.ProductionCycle" Multiplicity="0..1" />
+          <End Role="Harvest" Type="HatcheryModel.Harvest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductionCycle">
+              <PropertyRef Name="ProductionCycleID" />
+            </Principal>
+            <Dependent Role="Harvest">
+              <PropertyRef Name="ProductionCycleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Productio__Modul__31EC6D26">
+          <End Role="MasterModule" Type="HatcheryModel.MasterModule" Multiplicity="0..1" />
+          <End Role="ProductionCycle" Type="HatcheryModel.ProductionCycle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MasterModule">
+              <PropertyRef Name="ModuleName" />
+            </Principal>
+            <Dependent Role="ProductionCycle">
+              <PropertyRef Name="ModuleName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="DailyMonitoringPostLarva">
+          <Key>
+            <PropertyRef Name="PostLarvaID" />
+          </Key>
+          <Property Type="Int32" Name="PostLarvaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ModuleName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ProductionCycleID" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="Int32" Name="DOC" />
+          <Property Type="String" Name="Stage" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Population" />
+          <Property Type="Double" Name="BiosZ" />
+          <Property Type="Double" Name="BiosM" />
+          <Property Type="Double" Name="Bios100" />
+          <Property Type="Double" Name="Bios150" />
+          <Property Type="Double" Name="LanzyPL" />
+          <Property Type="Double" Name="LanzyMPL" />
+          <Property Type="Double" Name="LanzyZM" />
+          <Property Type="Double" Name="MPZ" />
+          <Property Type="Double" Name="MP1" />
+          <Property Type="Double" Name="MP2" />
+          <Property Type="Double" Name="MP3" />
+          <Property Type="Double" Name="MPL" />
+          <Property Type="Double" Name="Spirulina" />
+          <Property Type="Double" Name="LHF" />
+          <Property Type="Double" Name="RoySF100_200" />
+          <Property Type="Double" Name="RoySF200_300" />
+          <Property Type="Double" Name="TzuFeng" />
+          <Property Type="Double" Name="Artemia" />
+          <Property Type="Double" Name="ArtemiaEZ1" />
+          <Property Type="Double" Name="ArtemiaEZ2" />
+          <Property Type="Double" Name="Activity" />
+          <Property Type="Double" Name="Length" />
+          <Property Type="Double" Name="STDEV" />
+          <Property Type="Double" Name="FGC" />
+          <Property Type="Double" Name="Necrosis" />
+          <Property Type="Double" Name="Fouling" />
+          <Property Type="Double" Name="Parasite" />
+          <Property Type="Double" Name="MGR" />
+          <Property Type="Double" Name="Treflan" />
+          <Property Type="Double" Name="Probiotik" />
+          <Property Type="String" Name="Remark" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="userID" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HatcheryModelStoreContainer" CdmEntityContainer="HatcheryEntities">
+          <EntitySetMapping Name="BroodStockMonitorings">
+            <EntityTypeMapping TypeName="HatcheryModel.BroodStockMonitoring">
+              <MappingFragment StoreEntitySet="BroodStockMonitoring">
+                <ScalarProperty Name="BSMID" ColumnName="BSMID" />
+                <ScalarProperty Name="Batch" ColumnName="Batch" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Male" ColumnName="Male" />
+                <ScalarProperty Name="Female" ColumnName="Female" />
+                <ScalarProperty Name="DeadMale" ColumnName="DeadMale" />
+                <ScalarProperty Name="DeadFemale" ColumnName="DeadFemale" />
+                <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+                <ScalarProperty Name="MatTemp" ColumnName="MatTemp" />
+                <ScalarProperty Name="HatcTemp" ColumnName="HatcTemp" />
+                <ScalarProperty Name="DO" ColumnName="DO" />
+                <ScalarProperty Name="PH" ColumnName="PH" />
+                <ScalarProperty Name="PolychaeteIn" ColumnName="PolychaeteIn" />
+                <ScalarProperty Name="PolychaeteUsed" ColumnName="PolychaeteUsed" />
+                <ScalarProperty Name="PolychaeteBalance" ColumnName="PolychaeteBalance" />
+                <ScalarProperty Name="SquidIn" ColumnName="SquidIn" />
+                <ScalarProperty Name="SquidUsed" ColumnName="SquidUsed" />
+                <ScalarProperty Name="SquidiBalance" ColumnName="SquidiBalance" />
+                <ScalarProperty Name="FR" ColumnName="FR" />
+                <ScalarProperty Name="EDTA" ColumnName="EDTA" />
+                <ScalarProperty Name="Formaldehyde" ColumnName="Formaldehyde" />
+                <ScalarProperty Name="Treflan" ColumnName="Treflan" />
+                <ScalarProperty Name="Iodine" ColumnName="Iodine" />
+                <ScalarProperty Name="Vitamin" ColumnName="Vitamin" />
+                <ScalarProperty Name="Matured" ColumnName="Matured" />
+                <ScalarProperty Name="Mated" ColumnName="Mated" />
+                <ScalarProperty Name="Spawned" ColumnName="Spawned" />
+                <ScalarProperty Name="Egg" ColumnName="Egg" />
+                <ScalarProperty Name="NaupliiBruto" ColumnName="NaupliiBruto" />
+                <ScalarProperty Name="NaupliiNetto" ColumnName="NaupliiNetto" />
+                <ScalarProperty Name="Flush" ColumnName="Flush" />
+                <ScalarProperty Name="Distribution" ColumnName="Distribution" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DailyMonitoringPostLarvaLengkaps">
+            <EntityTypeMapping TypeName="HatcheryModel.DailyMonitoringPostLarvaLengkap">
+              <MappingFragment StoreEntitySet="DailyMonitoringPostLarvaLengkap">
+                <ScalarProperty Name="MID" ColumnName="MID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="Population" ColumnName="Population" />
+                <ScalarProperty Name="BiosZ" ColumnName="BiosZ" />
+                <ScalarProperty Name="BiosM" ColumnName="BiosM" />
+                <ScalarProperty Name="Bios100" ColumnName="Bios100" />
+                <ScalarProperty Name="Bios150" ColumnName="Bios150" />
+                <ScalarProperty Name="LanzyPL" ColumnName="LanzyPL" />
+                <ScalarProperty Name="LanzyMPL" ColumnName="LanzyMPL" />
+                <ScalarProperty Name="LanzyZM" ColumnName="LanzyZM" />
+                <ScalarProperty Name="MPZ" ColumnName="MPZ" />
+                <ScalarProperty Name="MP1" ColumnName="MP1" />
+                <ScalarProperty Name="MP2" ColumnName="MP2" />
+                <ScalarProperty Name="MP3" ColumnName="MP3" />
+                <ScalarProperty Name="MPL" ColumnName="MPL" />
+                <ScalarProperty Name="Spirulina" ColumnName="Spirulina" />
+                <ScalarProperty Name="LHF" ColumnName="LHF" />
+                <ScalarProperty Name="RoySF100_200" ColumnName="RoySF100-200" />
+                <ScalarProperty Name="RoySF200_300" ColumnName="RoySF200-300" />
+                <ScalarProperty Name="TzuFeng" ColumnName="TzuFeng" />
+                <ScalarProperty Name="Artemia" ColumnName="Artemia" />
+                <ScalarProperty Name="ArtemiaEZ1" ColumnName="ArtemiaEZ1" />
+                <ScalarProperty Name="ArtemiaEZ2" ColumnName="ArtemiaEZ2" />
+                <ScalarProperty Name="Activity" ColumnName="Activity" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="STDEV" ColumnName="STDEV" />
+                <ScalarProperty Name="FGC" ColumnName="FGC" />
+                <ScalarProperty Name="Necrosis" ColumnName="Necrosis" />
+                <ScalarProperty Name="Fouling" ColumnName="Fouling" />
+                <ScalarProperty Name="Parasite" ColumnName="Parasite" />
+                <ScalarProperty Name="MGR" ColumnName="MGR" />
+                <ScalarProperty Name="AlgaeMorning" ColumnName="AlgaeMorning" />
+                <ScalarProperty Name="AlgaeEvening" ColumnName="AlgaeEvening" />
+                <ScalarProperty Name="Alkalinty" ColumnName="Alkalinty" />
+                <ScalarProperty Name="TemperatureMorning" ColumnName="TemperatureMorning" />
+                <ScalarProperty Name="TemperatureEvening" ColumnName="TemperatureEvening" />
+                <ScalarProperty Name="PH" ColumnName="PH" />
+                <ScalarProperty Name="NH3" ColumnName="NH3" />
+                <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+                <ScalarProperty Name="DOMorning" ColumnName="DOMorning" />
+                <ScalarProperty Name="DOEvening" ColumnName="DOEvening" />
+                <ScalarProperty Name="Treflan" ColumnName="Treflan" />
+                <ScalarProperty Name="Probiotik" ColumnName="Probiotik" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Harvests">
+            <EntityTypeMapping TypeName="HatcheryModel.Harvest">
+              <MappingFragment StoreEntitySet="Harvest">
+                <ScalarProperty Name="HarvestID" ColumnName="HarvestID" />
+                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="HarvestedPopulation" ColumnName="HarvestedPopulation" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MasterBatches">
+            <EntityTypeMapping TypeName="HatcheryModel.MasterBatch">
+              <MappingFragment StoreEntitySet="MasterBatch">
+                <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+                <ScalarProperty Name="IsTerminated" ColumnName="IsTerminated" />
+                <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+                <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MasterModules">
+            <EntityTypeMapping TypeName="HatcheryModel.MasterModule">
+              <MappingFragment StoreEntitySet="MasterModule">
+                <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+                <ScalarProperty Name="Tonnage" ColumnName="Tonnage" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Depth" ColumnName="Depth" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MasterStages">
+            <EntityTypeMapping TypeName="HatcheryModel.MasterStage">
+              <MappingFragment StoreEntitySet="MasterStages">
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductionCycles">
+            <EntityTypeMapping TypeName="HatcheryModel.ProductionCycle">
+              <MappingFragment StoreEntitySet="ProductionCycle">
+                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Nauplii" ColumnName="Nauplii" />
+                <ScalarProperty Name="Batch" ColumnName="Batch" />
+                <ScalarProperty Name="isInProduction" ColumnName="isInProduction" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WaterParameterPostLarvas">
+            <EntityTypeMapping TypeName="HatcheryModel.WaterParameterPostLarva">
+              <MappingFragment StoreEntitySet="WaterParameterPostLarva">
+                <ScalarProperty Name="Algae" ColumnName="Algae" />
+                <ScalarProperty Name="WaterParameterID" ColumnName="WaterParameterID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Alkalinty" ColumnName="Alkalinty" />
+                <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+                <ScalarProperty Name="PH" ColumnName="PH" />
+                <ScalarProperty Name="NH3" ColumnName="NH3" />
+                <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+                <ScalarProperty Name="DO" ColumnName="DO" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DailyMonitoringPostLarvas">
+            <EntityTypeMapping TypeName="HatcheryModel.DailyMonitoringPostLarva">
+              <MappingFragment StoreEntitySet="DailyMonitoringPostLarva">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Probiotik" ColumnName="Probiotik" />
+                <ScalarProperty Name="Treflan" ColumnName="Treflan" />
+                <ScalarProperty Name="MGR" ColumnName="MGR" />
+                <ScalarProperty Name="Parasite" ColumnName="Parasite" />
+                <ScalarProperty Name="Fouling" ColumnName="Fouling" />
+                <ScalarProperty Name="Necrosis" ColumnName="Necrosis" />
+                <ScalarProperty Name="FGC" ColumnName="FGC" />
+                <ScalarProperty Name="STDEV" ColumnName="STDEV" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Activity" ColumnName="Activity" />
+                <ScalarProperty Name="ArtemiaEZ2" ColumnName="ArtemiaEZ2" />
+                <ScalarProperty Name="ArtemiaEZ1" ColumnName="ArtemiaEZ1" />
+                <ScalarProperty Name="Artemia" ColumnName="Artemia" />
+                <ScalarProperty Name="TzuFeng" ColumnName="TzuFeng" />
+                <ScalarProperty Name="RoySF200_300" ColumnName="RoySF200-300" />
+                <ScalarProperty Name="RoySF100_200" ColumnName="RoySF100-200" />
+                <ScalarProperty Name="LHF" ColumnName="LHF" />
+                <ScalarProperty Name="Spirulina" ColumnName="Spirulina" />
+                <ScalarProperty Name="MPL" ColumnName="MPL" />
+                <ScalarProperty Name="MP3" ColumnName="MP3" />
+                <ScalarProperty Name="MP2" ColumnName="MP2" />
+                <ScalarProperty Name="MP1" ColumnName="MP1" />
+                <ScalarProperty Name="MPZ" ColumnName="MPZ" />
+                <ScalarProperty Name="LanzyZM" ColumnName="LanzyZM" />
+                <ScalarProperty Name="LanzyMPL" ColumnName="LanzyMPL" />
+                <ScalarProperty Name="LanzyPL" ColumnName="LanzyPL" />
+                <ScalarProperty Name="Bios150" ColumnName="Bios150" />
+                <ScalarProperty Name="Bios100" ColumnName="Bios100" />
+                <ScalarProperty Name="BiosM" ColumnName="BiosM" />
+                <ScalarProperty Name="BiosZ" ColumnName="BiosZ" />
+                <ScalarProperty Name="Population" ColumnName="Population" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+                <ScalarProperty Name="PostLarvaID" ColumnName="PostLarvaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

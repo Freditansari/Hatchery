@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HatcheryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="HatcheryModelStoreContainer">
+    <EntitySet Name="BroodStockMonitoring" EntityType="HatcheryModel.Store.BroodStockMonitoring" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DailyMonitoringPostLarva" EntityType="HatcheryModel.Store.DailyMonitoringPostLarva" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DailyMonitoringPostLarvaLengkap" EntityType="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Harvest" EntityType="HatcheryModel.Store.Harvest" store:Type="Tables" store:Schema="dbo" store:Name="Harvest">
+      <DefiningQuery>SELECT 
+      [Harvest].[HarvestID] AS [HarvestID], 
+      [Harvest].[ProductionCycleID] AS [ProductionCycleID], 
+      [Harvest].[DOC] AS [DOC], 
+      [Harvest].[Stage] AS [Stage], 
+      [Harvest].[HarvestedPopulation] AS [HarvestedPopulation], 
+      [Harvest].[Date] AS [Date], 
+      [Harvest].[Time] AS [Time], 
+      [Harvest].[userid] AS [userid]
+      FROM [dbo].[Harvest] AS [Harvest]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MasterBatch" EntityType="HatcheryModel.Store.MasterBatch" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MasterModule" EntityType="HatcheryModel.Store.MasterModule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MasterStages" EntityType="HatcheryModel.Store.MasterStages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductionCycle" EntityType="HatcheryModel.Store.ProductionCycle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WaterParameterPostLarva" EntityType="HatcheryModel.Store.WaterParameterPostLarva" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__DailyMoni__Modul__35BCFE0A" Association="HatcheryModel.Store.FK__DailyMoni__Modul__35BCFE0A">
+      <End Role="MasterModule" EntitySet="MasterModule" />
+      <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkap" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DailyMoni__Produ__2E1BDC42" Association="HatcheryModel.Store.FK__DailyMoni__Produ__2E1BDC42">
+      <End Role="ProductionCycle" EntitySet="ProductionCycle" />
+      <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkap" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.Store.FK__Harvest__Product__2F10007B">
+      <End Role="ProductionCycle" EntitySet="ProductionCycle" />
+      <End Role="Harvest" EntitySet="Harvest" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productio__Modul__31EC6D26" Association="HatcheryModel.Store.FK__Productio__Modul__31EC6D26">
+      <End Role="MasterModule" EntitySet="MasterModule" />
+      <End Role="ProductionCycle" EntitySet="ProductionCycle" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BroodStockMonitoring">
+    <Key>
+      <PropertyRef Name="BSMID" />
+    </Key>
+    <Property Name="BSMID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Batch" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Male" Type="int" />
+    <Property Name="Female" Type="int" />
+    <Property Name="DeadMale" Type="int" />
+    <Property Name="DeadFemale" Type="int" />
+    <Property Name="Salinity" Type="float" />
+    <Property Name="MatTemp" Type="float" />
+    <Property Name="HatcTemp" Type="float" />
+    <Property Name="DO" Type="float" />
+    <Property Name="PH" Type="float" />
+    <Property Name="PolychaeteIn" Type="float" />
+    <Property Name="PolychaeteUsed" Type="float" />
+    <Property Name="PolychaeteBalance" Type="float" />
+    <Property Name="SquidIn" Type="float" />
+    <Property Name="SquidUsed" Type="float" />
+    <Property Name="SquidiBalance" Type="float" />
+    <Property Name="FR" Type="float" />
+    <Property Name="EDTA" Type="float" />
+    <Property Name="Formaldehyde" Type="float" />
+    <Property Name="Treflan" Type="float" />
+    <Property Name="Iodine" Type="float" />
+    <Property Name="Vitamin" Type="float" />
+    <Property Name="Matured" Type="int" />
+    <Property Name="Mated" Type="int" />
+    <Property Name="Spawned" Type="int" />
+    <Property Name="Egg" Type="float" />
+    <Property Name="NaupliiBruto" Type="float" />
+    <Property Name="NaupliiNetto" Type="float" />
+    <Property Name="Flush" Type="float" />
+    <Property Name="Distribution" Type="nvarchar" MaxLength="200" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="userID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DailyMonitoringPostLarva">
+    <Key>
+      <PropertyRef Name="PostLarvaID" />
+    </Key>
+    <Property Name="PostLarvaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductionCycleID" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="DOC" Type="int" />
+    <Property Name="Stage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Population" Type="int" />
+    <Property Name="BiosZ" Type="float" />
+    <Property Name="BiosM" Type="float" />
+    <Property Name="Bios100" Type="float" />
+    <Property Name="Bios150" Type="float" />
+    <Property Name="LanzyPL" Type="float" />
+    <Property Name="LanzyMPL" Type="float" />
+    <Property Name="LanzyZM" Type="float" />
+    <Property Name="MPZ" Type="float" />
+    <Property Name="MP1" Type="float" />
+    <Property Name="MP2" Type="float" />
+    <Property Name="MP3" Type="float" />
+    <Property Name="MPL" Type="float" />
+    <Property Name="Spirulina" Type="float" />
+    <Property Name="LHF" Type="float" />
+    <Property Name="RoySF100-200" Type="float" />
+    <Property Name="RoySF200-300" Type="float" />
+    <Property Name="TzuFeng" Type="float" />
+    <Property Name="Artemia" Type="float" />
+    <Property Name="ArtemiaEZ1" Type="float" />
+    <Property Name="ArtemiaEZ2" Type="float" />
+    <Property Name="Activity" Type="float" />
+    <Property Name="Length" Type="float" />
+    <Property Name="STDEV" Type="float" />
+    <Property Name="FGC" Type="float" />
+    <Property Name="Necrosis" Type="float" />
+    <Property Name="Fouling" Type="float" />
+    <Property Name="Parasite" Type="float" />
+    <Property Name="MGR" Type="float" />
+    <Property Name="Treflan" Type="float" />
+    <Property Name="Probiotik" Type="float" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="userID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="DailyMonitoringPostLarvaLengkap">
+    <Key>
+      <PropertyRef Name="MID" />
+    </Key>
+    <Property Name="MID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductionCycleID" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="DOC" Type="int" />
+    <Property Name="Stage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Population" Type="int" />
+    <Property Name="BiosZ" Type="float" />
+    <Property Name="BiosM" Type="float" />
+    <Property Name="Bios100" Type="float" />
+    <Property Name="Bios150" Type="float" />
+    <Property Name="LanzyPL" Type="float" />
+    <Property Name="LanzyMPL" Type="float" />
+    <Property Name="LanzyZM" Type="float" />
+    <Property Name="MPZ" Type="float" />
+    <Property Name="MP1" Type="float" />
+    <Property Name="MP2" Type="float" />
+    <Property Name="MP3" Type="float" />
+    <Property Name="MPL" Type="float" />
+    <Property Name="Spirulina" Type="float" />
+    <Property Name="LHF" Type="float" />
+    <Property Name="RoySF100-200" Type="float" />
+    <Property Name="RoySF200-300" Type="float" />
+    <Property Name="TzuFeng" Type="float" />
+    <Property Name="Artemia" Type="float" />
+    <Property Name="ArtemiaEZ1" Type="float" />
+    <Property Name="ArtemiaEZ2" Type="float" />
+    <Property Name="Activity" Type="float" />
+    <Property Name="Length" Type="float" />
+    <Property Name="STDEV" Type="float" />
+    <Property Name="FGC" Type="float" />
+    <Property Name="Necrosis" Type="float" />
+    <Property Name="Fouling" Type="float" />
+    <Property Name="Parasite" Type="float" />
+    <Property Name="MGR" Type="float" />
+    <Property Name="AlgaeMorning" Type="nvarchar" MaxLength="50" />
+    <Property Name="AlgaeEvening" Type="nvarchar" MaxLength="50" />
+    <Property Name="Alkalinty" Type="float" />
+    <Property Name="TemperatureMorning" Type="float" />
+    <Property Name="TemperatureEvening" Type="float" />
+    <Property Name="PH" Type="float" />
+    <Property Name="NH3" Type="float" />
+    <Property Name="Salinity" Type="float" />
+    <Property Name="DOMorning" Type="float" />
+    <Property Name="DOEvening" Type="float" />
+    <Property Name="Treflan" Type="float" />
+    <Property Name="Probiotik" Type="float" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="userID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Hatchery.dbo.Harvest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Harvest">
+    <Key>
+      <PropertyRef Name="HarvestID" />
+    </Key>
+    <Property Name="HarvestID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductionCycleID" Type="int" />
+    <Property Name="DOC" Type="int" />
+    <Property Name="Stage" Type="nvarchar" MaxLength="50" />
+    <Property Name="HarvestedPopulation" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Time" Type="time" />
+    <Property Name="userid" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterBatch">
+    <Key>
+      <PropertyRef Name="BatchNumber" />
+    </Key>
+    <Property Name="BatchNumber" Type="int" Nullable="false" />
+    <Property Name="IsTerminated" Type="bit" Nullable="false" />
+    <Property Name="ReceivedDate" Type="date" />
+    <Property Name="TerminationDate" Type="date" />
+    <Property Name="Note" Type="varchar(max)" />
+    <Property Name="userID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterModule">
+    <Key>
+      <PropertyRef Name="ModuleName" />
+    </Key>
+    <Property Name="ModuleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Tonnage" Type="float" />
+    <Property Name="Volume" Type="float" />
+    <Property Name="Area" Type="float" />
+    <Property Name="Depth" Type="float" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MasterStages">
+    <Key>
+      <PropertyRef Name="DOC" />
+    </Key>
+    <Property Name="DOC" Type="int" Nullable="false" />
+    <Property Name="Stage" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProductionCycle">
+    <Key>
+      <PropertyRef Name="ProductionCycleID" />
+    </Key>
+    <Property Name="ProductionCycleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="Nauplii" Type="float" />
+    <Property Name="Batch" Type="int" />
+    <Property Name="isInProduction" Type="bit" />
+    <Property Name="EndDate" Type="date" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="WaterParameterPostLarva">
+    <Key>
+      <PropertyRef Name="WaterParameterID" />
+    </Key>
+    <Property Name="WaterParameterID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductionCycleID" Type="int" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Alkalinty" Type="float" />
+    <Property Name="Temperature" Type="float" />
+    <Property Name="PH" Type="float" />
+    <Property Name="NH3" Type="float" />
+    <Property Name="Salinity" Type="float" />
+    <Property Name="DO" Type="float" />
+    <Property Name="Algae" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="userID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK__DailyMoni__Modul__35BCFE0A">
+    <End Role="MasterModule" Type="HatcheryModel.Store.MasterModule" Multiplicity="0..1" />
+    <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterModule">
+        <PropertyRef Name="ModuleName" />
+      </Principal>
+      <Dependent Role="DailyMonitoringPostLarvaLengkap">
+        <PropertyRef Name="ModuleName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DailyMoni__Produ__2E1BDC42">
+    <End Role="ProductionCycle" Type="HatcheryModel.Store.ProductionCycle" Multiplicity="0..1" />
+    <End Role="DailyMonitoringPostLarvaLengkap" Type="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductionCycle">
+        <PropertyRef Name="ProductionCycleID" />
+      </Principal>
+      <Dependent Role="DailyMonitoringPostLarvaLengkap">
+        <PropertyRef Name="ProductionCycleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Harvest__Product__2F10007B">
+    <End Role="ProductionCycle" Type="HatcheryModel.Store.ProductionCycle" Multiplicity="0..1" />
+    <End Role="Harvest" Type="HatcheryModel.Store.Harvest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductionCycle">
+        <PropertyRef Name="ProductionCycleID" />
+      </Principal>
+      <Dependent Role="Harvest">
+        <PropertyRef Name="ProductionCycleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productio__Modul__31EC6D26">
+    <End Role="MasterModule" Type="HatcheryModel.Store.MasterModule" Multiplicity="0..1" />
+    <End Role="ProductionCycle" Type="HatcheryModel.Store.ProductionCycle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterModule">
+        <PropertyRef Name="ModuleName" />
+      </Principal>
+      <Dependent Role="ProductionCycle">
+        <PropertyRef Name="ModuleName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

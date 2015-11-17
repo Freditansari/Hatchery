@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HatcheryModelStoreContainer" CdmEntityContainer="HatcheryEntities">
+    <EntitySetMapping Name="BroodStockMonitorings">
+      <EntityTypeMapping TypeName="HatcheryModel.BroodStockMonitoring">
+        <MappingFragment StoreEntitySet="BroodStockMonitoring">
+          <ScalarProperty Name="BSMID" ColumnName="BSMID" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Male" ColumnName="Male" />
+          <ScalarProperty Name="Female" ColumnName="Female" />
+          <ScalarProperty Name="DeadMale" ColumnName="DeadMale" />
+          <ScalarProperty Name="DeadFemale" ColumnName="DeadFemale" />
+          <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+          <ScalarProperty Name="MatTemp" ColumnName="MatTemp" />
+          <ScalarProperty Name="HatcTemp" ColumnName="HatcTemp" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="PH" ColumnName="PH" />
+          <ScalarProperty Name="PolychaeteIn" ColumnName="PolychaeteIn" />
+          <ScalarProperty Name="PolychaeteUsed" ColumnName="PolychaeteUsed" />
+          <ScalarProperty Name="PolychaeteBalance" ColumnName="PolychaeteBalance" />
+          <ScalarProperty Name="SquidIn" ColumnName="SquidIn" />
+          <ScalarProperty Name="SquidUsed" ColumnName="SquidUsed" />
+          <ScalarProperty Name="SquidiBalance" ColumnName="SquidiBalance" />
+          <ScalarProperty Name="FR" ColumnName="FR" />
+          <ScalarProperty Name="EDTA" ColumnName="EDTA" />
+          <ScalarProperty Name="Formaldehyde" ColumnName="Formaldehyde" />
+          <ScalarProperty Name="Treflan" ColumnName="Treflan" />
+          <ScalarProperty Name="Iodine" ColumnName="Iodine" />
+          <ScalarProperty Name="Vitamin" ColumnName="Vitamin" />
+          <ScalarProperty Name="Matured" ColumnName="Matured" />
+          <ScalarProperty Name="Mated" ColumnName="Mated" />
+          <ScalarProperty Name="Spawned" ColumnName="Spawned" />
+          <ScalarProperty Name="Egg" ColumnName="Egg" />
+          <ScalarProperty Name="NaupliiBruto" ColumnName="NaupliiBruto" />
+          <ScalarProperty Name="NaupliiNetto" ColumnName="NaupliiNetto" />
+          <ScalarProperty Name="Flush" ColumnName="Flush" />
+          <ScalarProperty Name="Distribution" ColumnName="Distribution" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyMonitoringPostLarvaLengkaps">
+      <EntityTypeMapping TypeName="HatcheryModel.DailyMonitoringPostLarvaLengkap">
+        <MappingFragment StoreEntitySet="DailyMonitoringPostLarvaLengkap">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DOC" ColumnName="DOC" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="Population" ColumnName="Population" />
+          <ScalarProperty Name="BiosZ" ColumnName="BiosZ" />
+          <ScalarProperty Name="BiosM" ColumnName="BiosM" />
+          <ScalarProperty Name="Bios100" ColumnName="Bios100" />
+          <ScalarProperty Name="Bios150" ColumnName="Bios150" />
+          <ScalarProperty Name="LanzyPL" ColumnName="LanzyPL" />
+          <ScalarProperty Name="LanzyMPL" ColumnName="LanzyMPL" />
+          <ScalarProperty Name="LanzyZM" ColumnName="LanzyZM" />
+          <ScalarProperty Name="MPZ" ColumnName="MPZ" />
+          <ScalarProperty Name="MP1" ColumnName="MP1" />
+          <ScalarProperty Name="MP2" ColumnName="MP2" />
+          <ScalarProperty Name="MP3" ColumnName="MP3" />
+          <ScalarProperty Name="MPL" ColumnName="MPL" />
+          <ScalarProperty Name="Spirulina" ColumnName="Spirulina" />
+          <ScalarProperty Name="LHF" ColumnName="LHF" />
+          <ScalarProperty Name="RoySF100_200" ColumnName="RoySF100-200" />
+          <ScalarProperty Name="RoySF200_300" ColumnName="RoySF200-300" />
+          <ScalarProperty Name="TzuFeng" ColumnName="TzuFeng" />
+          <ScalarProperty Name="Artemia" ColumnName="Artemia" />
+          <ScalarProperty Name="ArtemiaEZ1" ColumnName="ArtemiaEZ1" />
+          <ScalarProperty Name="ArtemiaEZ2" ColumnName="ArtemiaEZ2" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="STDEV" ColumnName="STDEV" />
+          <ScalarProperty Name="FGC" ColumnName="FGC" />
+          <ScalarProperty Name="Necrosis" ColumnName="Necrosis" />
+          <ScalarProperty Name="Fouling" ColumnName="Fouling" />
+          <ScalarProperty Name="Parasite" ColumnName="Parasite" />
+          <ScalarProperty Name="MGR" ColumnName="MGR" />
+          <ScalarProperty Name="AlgaeMorning" ColumnName="AlgaeMorning" />
+          <ScalarProperty Name="AlgaeEvening" ColumnName="AlgaeEvening" />
+          <ScalarProperty Name="Alkalinty" ColumnName="Alkalinty" />
+          <ScalarProperty Name="TemperatureMorning" ColumnName="TemperatureMorning" />
+          <ScalarProperty Name="TemperatureEvening" ColumnName="TemperatureEvening" />
+          <ScalarProperty Name="PH" ColumnName="PH" />
+          <ScalarProperty Name="NH3" ColumnName="NH3" />
+          <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+          <ScalarProperty Name="DOMorning" ColumnName="DOMorning" />
+          <ScalarProperty Name="DOEvening" ColumnName="DOEvening" />
+          <ScalarProperty Name="Treflan" ColumnName="Treflan" />
+          <ScalarProperty Name="Probiotik" ColumnName="Probiotik" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Harvests">
+      <EntityTypeMapping TypeName="HatcheryModel.Harvest">
+        <MappingFragment StoreEntitySet="Harvest">
+          <ScalarProperty Name="HarvestID" ColumnName="HarvestID" />
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="DOC" ColumnName="DOC" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="HarvestedPopulation" ColumnName="HarvestedPopulation" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterBatches">
+      <EntityTypeMapping TypeName="HatcheryModel.MasterBatch">
+        <MappingFragment StoreEntitySet="MasterBatch">
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="IsTerminated" ColumnName="IsTerminated" />
+          <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+          <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterModules">
+      <EntityTypeMapping TypeName="HatcheryModel.MasterModule">
+        <MappingFragment StoreEntitySet="MasterModule">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="Tonnage" ColumnName="Tonnage" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Depth" ColumnName="Depth" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterStages">
+      <EntityTypeMapping TypeName="HatcheryModel.MasterStage">
+        <MappingFragment StoreEntitySet="MasterStages">
+          <ScalarProperty Name="DOC" ColumnName="DOC" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionCycles">
+      <EntityTypeMapping TypeName="HatcheryModel.ProductionCycle">
+        <MappingFragment StoreEntitySet="ProductionCycle">
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Nauplii" ColumnName="Nauplii" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="isInProduction" ColumnName="isInProduction" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaterParameterPostLarvas">
+      <EntityTypeMapping TypeName="HatcheryModel.WaterParameterPostLarva">
+        <MappingFragment StoreEntitySet="WaterParameterPostLarva">
+          <ScalarProperty Name="Algae" ColumnName="Algae" />
+          <ScalarProperty Name="WaterParameterID" ColumnName="WaterParameterID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Alkalinty" ColumnName="Alkalinty" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="PH" ColumnName="PH" />
+          <ScalarProperty Name="NH3" ColumnName="NH3" />
+          <ScalarProperty Name="Salinity" ColumnName="Salinity" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyMonitoringPostLarvas">
+      <EntityTypeMapping TypeName="HatcheryModel.DailyMonitoringPostLarva">
+        <MappingFragment StoreEntitySet="DailyMonitoringPostLarva">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Probiotik" ColumnName="Probiotik" />
+          <ScalarProperty Name="Treflan" ColumnName="Treflan" />
+          <ScalarProperty Name="MGR" ColumnName="MGR" />
+          <ScalarProperty Name="Parasite" ColumnName="Parasite" />
+          <ScalarProperty Name="Fouling" ColumnName="Fouling" />
+          <ScalarProperty Name="Necrosis" ColumnName="Necrosis" />
+          <ScalarProperty Name="FGC" ColumnName="FGC" />
+          <ScalarProperty Name="STDEV" ColumnName="STDEV" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="ArtemiaEZ2" ColumnName="ArtemiaEZ2" />
+          <ScalarProperty Name="ArtemiaEZ1" ColumnName="ArtemiaEZ1" />
+          <ScalarProperty Name="Artemia" ColumnName="Artemia" />
+          <ScalarProperty Name="TzuFeng" ColumnName="TzuFeng" />
+          <ScalarProperty Name="RoySF200_300" ColumnName="RoySF200-300" />
+          <ScalarProperty Name="RoySF100_200" ColumnName="RoySF100-200" />
+          <ScalarProperty Name="LHF" ColumnName="LHF" />
+          <ScalarProperty Name="Spirulina" ColumnName="Spirulina" />
+          <ScalarProperty Name="MPL" ColumnName="MPL" />
+          <ScalarProperty Name="MP3" ColumnName="MP3" />
+          <ScalarProperty Name="MP2" ColumnName="MP2" />
+          <ScalarProperty Name="MP1" ColumnName="MP1" />
+          <ScalarProperty Name="MPZ" ColumnName="MPZ" />
+          <ScalarProperty Name="LanzyZM" ColumnName="LanzyZM" />
+          <ScalarProperty Name="LanzyMPL" ColumnName="LanzyMPL" />
+          <ScalarProperty Name="LanzyPL" ColumnName="LanzyPL" />
+          <ScalarProperty Name="Bios150" ColumnName="Bios150" />
+          <ScalarProperty Name="Bios100" ColumnName="Bios100" />
+          <ScalarProperty Name="BiosM" ColumnName="BiosM" />
+          <ScalarProperty Name="BiosZ" ColumnName="BiosZ" />
+          <ScalarProperty Name="Population" ColumnName="Population" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="DOC" ColumnName="DOC" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="PostLarvaID" ColumnName="PostLarvaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
