@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,6 +14,23 @@ namespace Hatchery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    String[] userRoles = Roles.GetRolesForUser();
+
+            //    foreach (String role in userRoles)
+            //    {
+            //        if (role != "Managers")
+            //        {
+            //            throw new System.InvalidOperationException("User is not authorized");
+            //        }
+            //    }
+            //}
+            //catch (Exception)
+            //{
+                
+            //    Response.Redirect("~/Account/Login.aspx", true);
+            //}
             StartDateDatePicker.SelectedDate = DateTime.Now;
         }
 

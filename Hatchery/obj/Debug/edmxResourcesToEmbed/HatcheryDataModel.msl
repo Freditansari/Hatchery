@@ -96,20 +96,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Harvests">
-      <EntityTypeMapping TypeName="HatcheryModel.Harvest">
-        <MappingFragment StoreEntitySet="Harvest">
-          <ScalarProperty Name="HarvestID" ColumnName="HarvestID" />
-          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
-          <ScalarProperty Name="DOC" ColumnName="DOC" />
-          <ScalarProperty Name="Stage" ColumnName="Stage" />
-          <ScalarProperty Name="HarvestedPopulation" ColumnName="HarvestedPopulation" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
-          <ScalarProperty Name="Time" ColumnName="Time" />
-          <ScalarProperty Name="userid" ColumnName="userid" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="MasterBatches">
       <EntityTypeMapping TypeName="HatcheryModel.MasterBatch">
         <MappingFragment StoreEntitySet="MasterBatch">
@@ -219,6 +205,20 @@
           <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
           <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
           <ScalarProperty Name="WaterParameterID" ColumnName="WaterParameterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Harvests">
+      <EntityTypeMapping TypeName="HatcheryModel.Harvest">
+        <MappingFragment StoreEntitySet="Harvest">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="HarvestedPopulation" ColumnName="HarvestedPopulation" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="DOC" ColumnName="DOC" />
+          <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+          <ScalarProperty Name="HarvestID" ColumnName="HarvestID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

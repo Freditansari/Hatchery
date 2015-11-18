@@ -4,18 +4,7 @@
     <EntitySet Name="BroodStockMonitoring" EntityType="HatcheryModel.Store.BroodStockMonitoring" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="DailyMonitoringPostLarva" EntityType="HatcheryModel.Store.DailyMonitoringPostLarva" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="DailyMonitoringPostLarvaLengkap" EntityType="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Harvest" EntityType="HatcheryModel.Store.Harvest" store:Type="Tables" store:Schema="dbo" store:Name="Harvest">
-      <DefiningQuery>SELECT 
-      [Harvest].[HarvestID] AS [HarvestID], 
-      [Harvest].[ProductionCycleID] AS [ProductionCycleID], 
-      [Harvest].[DOC] AS [DOC], 
-      [Harvest].[Stage] AS [Stage], 
-      [Harvest].[HarvestedPopulation] AS [HarvestedPopulation], 
-      [Harvest].[Date] AS [Date], 
-      [Harvest].[Time] AS [Time], 
-      [Harvest].[userid] AS [userid]
-      FROM [dbo].[Harvest] AS [Harvest]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="Harvest" EntityType="HatcheryModel.Store.Harvest" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="MasterBatch" EntityType="HatcheryModel.Store.MasterBatch" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="MasterModule" EntityType="HatcheryModel.Store.MasterModule" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="MasterStages" EntityType="HatcheryModel.Store.MasterStages" store:Type="Tables" Schema="dbo" />
@@ -175,9 +164,6 @@
     <Property Name="Remark" Type="nvarchar(max)" />
     <Property Name="userID" Type="nvarchar" MaxLength="255" />
   </EntityType>
-  <!--Errors Found During Generation:
-      warning 6002: The table/view 'Hatchery.dbo.Harvest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
-      -->
   <EntityType Name="Harvest">
     <Key>
       <PropertyRef Name="HarvestID" />

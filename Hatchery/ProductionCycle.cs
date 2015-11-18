@@ -30,7 +30,7 @@ namespace Hatchery
         public string UserID { get; set; }
     
         public virtual ICollection<DailyMonitoringPostLarvaLengkap> DailyMonitoringPostLarvaLengkaps { get; set; }
-        public virtual ICollection<Harvest> Harvests { get; set; }
         public virtual MasterModule MasterModule { get; set; }
+        public virtual ICollection<Harvest> Harvests { get; set; }
     }
 }

@@ -6,7 +6,7 @@
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> -Hatchery Management System</title>
     <asp:PlaceHolder runat="server">     
           <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>  
@@ -70,21 +70,23 @@
                                     <Items>
                                         <telerik:RadMenuItem runat="server" Text="Broodstock">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Broodstock.aspx" Text="Broodstock Report">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/Broodstock.aspx" Text="Broodstock Report">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" Text="Batch Management" NavigateUrl="~/BroodstockBatch.aspx">
+                                                <telerik:RadMenuItem runat="server" Text="Batch Management" NavigateUrl="~/Technicians/BroodstockBatch.aspx">
                                                 </telerik:RadMenuItem>
-                                                   <telerik:RadMenuItem runat="server" Text="Broodstock Monitoring" NavigateUrl="~/broodstockMonitoring.aspx">
+                                                   <telerik:RadMenuItem runat="server" Text="Broodstock Monitoring" NavigateUrl="~/Technicians/broodstockMonitoring.aspx">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Postlarvae">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" Text="Production Cycle" NavigateUrl="~/ProductionCycle.aspx">
+                                                <telerik:RadMenuItem runat="server" Text="Production Cycle" NavigateUrl="~/Managers/ProductionCycle.aspx">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/PLMonitor.aspx" Text="Postlarvae Monitor">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/PLMonitor.aspx" Text="Postlarvae Monitor">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WaterParameterForm.aspx" Text="Water Parameter">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/WaterParameterForm.aspx" Text="Water Parameter">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/HarvestForm.aspx" Text="Harvest">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
@@ -119,7 +121,7 @@
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Hatchery Management System</p>
             </div>
         </div>
     </footer>

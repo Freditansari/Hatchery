@@ -9,18 +9,7 @@
           <EntitySet Name="BroodStockMonitoring" EntityType="HatcheryModel.Store.BroodStockMonitoring" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DailyMonitoringPostLarva" EntityType="HatcheryModel.Store.DailyMonitoringPostLarva" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DailyMonitoringPostLarvaLengkap" EntityType="HatcheryModel.Store.DailyMonitoringPostLarvaLengkap" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Harvest" EntityType="HatcheryModel.Store.Harvest" store:Type="Tables" store:Schema="dbo" store:Name="Harvest">
-            <DefiningQuery>SELECT 
-      [Harvest].[HarvestID] AS [HarvestID], 
-      [Harvest].[ProductionCycleID] AS [ProductionCycleID], 
-      [Harvest].[DOC] AS [DOC], 
-      [Harvest].[Stage] AS [Stage], 
-      [Harvest].[HarvestedPopulation] AS [HarvestedPopulation], 
-      [Harvest].[Date] AS [Date], 
-      [Harvest].[Time] AS [Time], 
-      [Harvest].[userid] AS [userid]
-      FROM [dbo].[Harvest] AS [Harvest]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="Harvest" EntityType="HatcheryModel.Store.Harvest" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="MasterBatch" EntityType="HatcheryModel.Store.MasterBatch" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="MasterModule" EntityType="HatcheryModel.Store.MasterModule" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="MasterStages" EntityType="HatcheryModel.Store.MasterStages" store:Type="Tables" Schema="dbo" />
@@ -180,9 +169,6 @@
           <Property Name="Remark" Type="nvarchar(max)" />
           <Property Name="userID" Type="nvarchar" MaxLength="255" />
         </EntityType>
-        <!--Errors Found During Generation:
-      warning 6002: The table/view 'Hatchery.dbo.Harvest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
-      -->
         <EntityType Name="Harvest">
           <Key>
             <PropertyRef Name="HarvestID" />
@@ -313,7 +299,6 @@
         <EntityContainer Name="HatcheryEntities" p1:LazyLoadingEnabled="true">
           <EntitySet Name="BroodStockMonitorings" EntityType="HatcheryModel.BroodStockMonitoring" />
           <EntitySet Name="DailyMonitoringPostLarvaLengkaps" EntityType="HatcheryModel.DailyMonitoringPostLarvaLengkap" />
-          <EntitySet Name="Harvests" EntityType="HatcheryModel.Harvest" />
           <EntitySet Name="MasterBatches" EntityType="HatcheryModel.MasterBatch" />
           <EntitySet Name="MasterModules" EntityType="HatcheryModel.MasterModule" />
           <EntitySet Name="MasterStages" EntityType="HatcheryModel.MasterStage" />
@@ -326,16 +311,17 @@
             <End Role="ProductionCycle" EntitySet="ProductionCycles" />
             <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkaps" />
           </AssociationSet>
-          <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.FK__Harvest__Product__2F10007B">
-            <End Role="ProductionCycle" EntitySet="ProductionCycles" />
-            <End Role="Harvest" EntitySet="Harvests" />
-          </AssociationSet>
           <AssociationSet Name="FK__Productio__Modul__31EC6D26" Association="HatcheryModel.FK__Productio__Modul__31EC6D26">
             <End Role="MasterModule" EntitySet="MasterModules" />
             <End Role="ProductionCycle" EntitySet="ProductionCycles" />
           </AssociationSet>
           <EntitySet Name="DailyMonitoringPostLarvas" EntityType="HatcheryModel.DailyMonitoringPostLarva" />
           <EntitySet Name="WaterParameterPostLarvas" EntityType="HatcheryModel.WaterParameterPostLarva" />
+          <EntitySet Name="Harvests" EntityType="HatcheryModel.Harvest" />
+          <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.FK__Harvest__Product__2F10007B">
+            <End Role="ProductionCycle" EntitySet="ProductionCycles" />
+            <End Role="Harvest" EntitySet="Harvests" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="BroodStockMonitoring">
           <Key>
@@ -432,20 +418,6 @@
           <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A" FromRole="DailyMonitoringPostLarvaLengkap" ToRole="MasterModule" />
           <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" FromRole="DailyMonitoringPostLarvaLengkap" ToRole="ProductionCycle" />
         </EntityType>
-        <EntityType Name="Harvest">
-          <Key>
-            <PropertyRef Name="HarvestID" />
-          </Key>
-          <Property Name="HarvestID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-          <Property Name="ProductionCycleID" Type="Int32" />
-          <Property Name="DOC" Type="Int32" />
-          <Property Name="Stage" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-          <Property Name="HarvestedPopulation" Type="Int32" />
-          <Property Name="Date" Type="DateTime" Precision="0" />
-          <Property Name="Time" Type="Time" Precision="7" />
-          <Property Name="userid" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
-          <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="Harvest" ToRole="ProductionCycle" />
-        </EntityType>
         <EntityType Name="MasterBatch">
           <Key>
             <PropertyRef Name="BatchNumber" />
@@ -491,8 +463,8 @@
           <Property Name="EndDate" Type="DateTime" Precision="0" />
           <Property Name="UserID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="DailyMonitoringPostLarvaLengkaps" Relationship="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" FromRole="ProductionCycle" ToRole="DailyMonitoringPostLarvaLengkap" />
-          <NavigationProperty Name="Harvests" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="ProductionCycle" ToRole="Harvest" />
           <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__Productio__Modul__31EC6D26" FromRole="ProductionCycle" ToRole="MasterModule" />
+          <NavigationProperty Name="Harvests" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="ProductionCycle" ToRole="Harvest" />
         </EntityType>
         <Association Name="FK__DailyMoni__Modul__35BCFE0A">
           <End Role="MasterModule" Type="HatcheryModel.MasterModule" Multiplicity="0..1" />
@@ -514,18 +486,6 @@
               <PropertyRef Name="ProductionCycleID" />
             </Principal>
             <Dependent Role="DailyMonitoringPostLarvaLengkap">
-              <PropertyRef Name="ProductionCycleID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Harvest__Product__2F10007B">
-          <End Role="ProductionCycle" Type="HatcheryModel.ProductionCycle" Multiplicity="0..1" />
-          <End Role="Harvest" Type="HatcheryModel.Harvest" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="ProductionCycle">
-              <PropertyRef Name="ProductionCycleID" />
-            </Principal>
-            <Dependent Role="Harvest">
               <PropertyRef Name="ProductionCycleID" />
             </Dependent>
           </ReferentialConstraint>
@@ -605,6 +565,32 @@
           <Property Type="String" Name="userID" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Type="Double" Name="N" />
         </EntityType>
+        <EntityType Name="Harvest">
+          <Key>
+            <PropertyRef Name="HarvestID" />
+          </Key>
+          <Property Type="Int32" Name="HarvestID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ProductionCycleID" />
+          <Property Type="Int32" Name="DOC" />
+          <Property Type="String" Name="Stage" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="HarvestedPopulation" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="Time" Name="Time" Precision="7" />
+          <Property Type="String" Name="userid" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="Harvest" ToRole="ProductionCycle" />
+        </EntityType>
+        <Association Name="FK__Harvest__Product__2F10007B">
+          <End Type="HatcheryModel.ProductionCycle" Role="ProductionCycle" Multiplicity="0..1" />
+          <End Type="HatcheryModel.Harvest" Role="Harvest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductionCycle">
+              <PropertyRef Name="ProductionCycleID" />
+            </Principal>
+            <Dependent Role="Harvest">
+              <PropertyRef Name="ProductionCycleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -703,20 +689,6 @@
                 <ScalarProperty Name="Probiotik" ColumnName="Probiotik" />
                 <ScalarProperty Name="Remark" ColumnName="Remark" />
                 <ScalarProperty Name="userID" ColumnName="userID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Harvests">
-            <EntityTypeMapping TypeName="HatcheryModel.Harvest">
-              <MappingFragment StoreEntitySet="Harvest">
-                <ScalarProperty Name="HarvestID" ColumnName="HarvestID" />
-                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
-                <ScalarProperty Name="DOC" ColumnName="DOC" />
-                <ScalarProperty Name="Stage" ColumnName="Stage" />
-                <ScalarProperty Name="HarvestedPopulation" ColumnName="HarvestedPopulation" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="Time" ColumnName="Time" />
-                <ScalarProperty Name="userid" ColumnName="userid" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -829,6 +801,20 @@
                 <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
                 <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
                 <ScalarProperty Name="WaterParameterID" ColumnName="WaterParameterID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Harvests">
+            <EntityTypeMapping TypeName="HatcheryModel.Harvest">
+              <MappingFragment StoreEntitySet="Harvest">
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="HarvestedPopulation" ColumnName="HarvestedPopulation" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="ProductionCycleID" ColumnName="ProductionCycleID" />
+                <ScalarProperty Name="HarvestID" ColumnName="HarvestID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

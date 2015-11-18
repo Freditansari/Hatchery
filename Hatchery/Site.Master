@@ -70,21 +70,23 @@
                                     <Items>
                                         <telerik:RadMenuItem runat="server" Text="Broodstock">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Broodstock.aspx" Text="Broodstock Report">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/Broodstock.aspx" Text="Broodstock Report">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" Text="Batch Management" NavigateUrl="~/BroodstockBatch.aspx">
+                                                <telerik:RadMenuItem runat="server" Text="Batch Management" NavigateUrl="~/Technicians/BroodstockBatch.aspx">
                                                 </telerik:RadMenuItem>
-                                                   <telerik:RadMenuItem runat="server" Text="Broodstock Monitoring" NavigateUrl="~/broodstockMonitoring.aspx">
+                                                   <telerik:RadMenuItem runat="server" Text="Broodstock Monitoring" NavigateUrl="~/Technicians/broodstockMonitoring.aspx">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Postlarvae">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" Text="Production Cycle" NavigateUrl="~/ProductionCycle.aspx">
+                                                <telerik:RadMenuItem runat="server" Text="Production Cycle" NavigateUrl="~/Managers/ProductionCycle.aspx">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/PLMonitor.aspx" Text="Postlarvae Monitor">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/PLMonitor.aspx" Text="Postlarvae Monitor">
                                                 </telerik:RadMenuItem>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WaterParameterForm.aspx" Text="Water Parameter">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/WaterParameterForm.aspx" Text="Water Parameter">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Technicians/HarvestForm.aspx" Text="Harvest">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>

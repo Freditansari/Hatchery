@@ -7,17 +7,17 @@
       <Diagram DiagramId="78686c4cd5764ae28885c1f1602d7bbc" Name="Diagram1">
         <EntityTypeShape EntityType="HatcheryModel.BroodStockMonitoring" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HatcheryModel.DailyMonitoringPostLarvaLengkap" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="HatcheryModel.Harvest" Width="1.5" PointX="5.25" PointY="19.125" IsExpanded="true" />
         <EntityTypeShape EntityType="HatcheryModel.MasterBatch" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HatcheryModel.MasterModule" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HatcheryModel.MasterStage" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HatcheryModel.ProductionCycle" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
         <AssociationConnector Association="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A" ManuallyRouted="false" />
         <AssociationConnector Association="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" ManuallyRouted="false" />
-        <AssociationConnector Association="HatcheryModel.FK__Harvest__Product__2F10007B" ManuallyRouted="false" />
         <AssociationConnector Association="HatcheryModel.FK__Productio__Modul__31EC6D26" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="HatcheryModel.DailyMonitoringPostLarva" Width="1.5" PointX="5.0149593283491951" PointY="14.731371901338628" />
+        <EntityTypeShape EntityType="HatcheryModel.DailyMonitoringPostLarva" Width="1.5" PointX="8.25" PointY="14.625" />
         <EntityTypeShape EntityType="HatcheryModel.WaterParameterPostLarva" Width="1.5" PointX="4.7117581408059959" PointY="28.238305701053843" />
+        <EntityTypeShape EntityType="HatcheryModel.Harvest" Width="1.5" PointX="6.2983956664327518" PointY="8.094437245323526" />
+        <AssociationConnector Association="HatcheryModel.FK__Harvest__Product__2F10007B" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

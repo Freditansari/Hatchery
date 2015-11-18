@@ -3,7 +3,6 @@
   <EntityContainer Name="HatcheryEntities" p1:LazyLoadingEnabled="true">
     <EntitySet Name="BroodStockMonitorings" EntityType="HatcheryModel.BroodStockMonitoring" />
     <EntitySet Name="DailyMonitoringPostLarvaLengkaps" EntityType="HatcheryModel.DailyMonitoringPostLarvaLengkap" />
-    <EntitySet Name="Harvests" EntityType="HatcheryModel.Harvest" />
     <EntitySet Name="MasterBatches" EntityType="HatcheryModel.MasterBatch" />
     <EntitySet Name="MasterModules" EntityType="HatcheryModel.MasterModule" />
     <EntitySet Name="MasterStages" EntityType="HatcheryModel.MasterStage" />
@@ -16,16 +15,17 @@
       <End Role="ProductionCycle" EntitySet="ProductionCycles" />
       <End Role="DailyMonitoringPostLarvaLengkap" EntitySet="DailyMonitoringPostLarvaLengkaps" />
     </AssociationSet>
-    <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.FK__Harvest__Product__2F10007B">
-      <End Role="ProductionCycle" EntitySet="ProductionCycles" />
-      <End Role="Harvest" EntitySet="Harvests" />
-    </AssociationSet>
     <AssociationSet Name="FK__Productio__Modul__31EC6D26" Association="HatcheryModel.FK__Productio__Modul__31EC6D26">
       <End Role="MasterModule" EntitySet="MasterModules" />
       <End Role="ProductionCycle" EntitySet="ProductionCycles" />
     </AssociationSet>
     <EntitySet Name="DailyMonitoringPostLarvas" EntityType="HatcheryModel.DailyMonitoringPostLarva" />
     <EntitySet Name="WaterParameterPostLarvas" EntityType="HatcheryModel.WaterParameterPostLarva" />
+    <EntitySet Name="Harvests" EntityType="HatcheryModel.Harvest" />
+    <AssociationSet Name="FK__Harvest__Product__2F10007B" Association="HatcheryModel.FK__Harvest__Product__2F10007B">
+      <End Role="ProductionCycle" EntitySet="ProductionCycles" />
+      <End Role="Harvest" EntitySet="Harvests" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="BroodStockMonitoring">
     <Key>
@@ -122,20 +122,6 @@
     <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__DailyMoni__Modul__35BCFE0A" FromRole="DailyMonitoringPostLarvaLengkap" ToRole="MasterModule" />
     <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" FromRole="DailyMonitoringPostLarvaLengkap" ToRole="ProductionCycle" />
   </EntityType>
-  <EntityType Name="Harvest">
-    <Key>
-      <PropertyRef Name="HarvestID" />
-    </Key>
-    <Property Name="HarvestID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="ProductionCycleID" Type="Int32" />
-    <Property Name="DOC" Type="Int32" />
-    <Property Name="Stage" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="HarvestedPopulation" Type="Int32" />
-    <Property Name="Date" Type="DateTime" Precision="0" />
-    <Property Name="Time" Type="Time" Precision="7" />
-    <Property Name="userid" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="Harvest" ToRole="ProductionCycle" />
-  </EntityType>
   <EntityType Name="MasterBatch">
     <Key>
       <PropertyRef Name="BatchNumber" />
@@ -181,8 +167,8 @@
     <Property Name="EndDate" Type="DateTime" Precision="0" />
     <Property Name="UserID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
     <NavigationProperty Name="DailyMonitoringPostLarvaLengkaps" Relationship="HatcheryModel.FK__DailyMoni__Produ__2E1BDC42" FromRole="ProductionCycle" ToRole="DailyMonitoringPostLarvaLengkap" />
-    <NavigationProperty Name="Harvests" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="ProductionCycle" ToRole="Harvest" />
     <NavigationProperty Name="MasterModule" Relationship="HatcheryModel.FK__Productio__Modul__31EC6D26" FromRole="ProductionCycle" ToRole="MasterModule" />
+    <NavigationProperty Name="Harvests" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="ProductionCycle" ToRole="Harvest" />
   </EntityType>
   <Association Name="FK__DailyMoni__Modul__35BCFE0A">
     <End Role="MasterModule" Type="HatcheryModel.MasterModule" Multiplicity="0..1" />
@@ -204,18 +190,6 @@
         <PropertyRef Name="ProductionCycleID" />
       </Principal>
       <Dependent Role="DailyMonitoringPostLarvaLengkap">
-        <PropertyRef Name="ProductionCycleID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Harvest__Product__2F10007B">
-    <End Role="ProductionCycle" Type="HatcheryModel.ProductionCycle" Multiplicity="0..1" />
-    <End Role="Harvest" Type="HatcheryModel.Harvest" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ProductionCycle">
-        <PropertyRef Name="ProductionCycleID" />
-      </Principal>
-      <Dependent Role="Harvest">
         <PropertyRef Name="ProductionCycleID" />
       </Dependent>
     </ReferentialConstraint>
@@ -295,4 +269,30 @@
     <Property Type="String" Name="userID" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Type="Double" Name="N" />
   </EntityType>
+  <EntityType Name="Harvest">
+    <Key>
+      <PropertyRef Name="HarvestID" />
+    </Key>
+    <Property Type="Int32" Name="HarvestID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ProductionCycleID" />
+    <Property Type="Int32" Name="DOC" />
+    <Property Type="String" Name="Stage" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="HarvestedPopulation" />
+    <Property Type="DateTime" Name="Date" Precision="0" />
+    <Property Type="Time" Name="Time" Precision="7" />
+    <Property Type="String" Name="userid" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductionCycle" Relationship="HatcheryModel.FK__Harvest__Product__2F10007B" FromRole="Harvest" ToRole="ProductionCycle" />
+  </EntityType>
+  <Association Name="FK__Harvest__Product__2F10007B">
+    <End Type="HatcheryModel.ProductionCycle" Role="ProductionCycle" Multiplicity="0..1" />
+    <End Type="HatcheryModel.Harvest" Role="Harvest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductionCycle">
+        <PropertyRef Name="ProductionCycleID" />
+      </Principal>
+      <Dependent Role="Harvest">
+        <PropertyRef Name="ProductionCycleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

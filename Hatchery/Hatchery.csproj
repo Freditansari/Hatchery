@@ -230,14 +230,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Broodstock.aspx" />
-    <Content Include="BroodstockBatch.aspx" />
+    <Content Include="Technicians\Broodstock.aspx" />
+    <Content Include="Technicians\BroodstockBatch.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="broodstockMonitoring.aspx" />
-    <Content Include="ProductionCycle.aspx" />
-    <Content Include="PLMonitor.aspx" />
-    <Content Include="WaterParameterForm.aspx" />
+    <Content Include="Technicians\broodstockMonitoring.aspx" />
+    <Content Include="Managers\ProductionCycle.aspx" />
+    <Content Include="Technicians\PLMonitor.aspx" />
+    <Content Include="Technicians\WaterParameterForm.aspx" />
     <Content Include="WebForm8.aspx" />
+    <Content Include="Technicians\HarvestForm.aspx" />
     <EntityDeploy Include="HatcheryDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HatcheryDataModel.Designer.cs</LastGenOutput>
@@ -417,18 +418,18 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Broodstock.aspx.cs">
+    <Compile Include="Technicians\Broodstock.aspx.cs">
       <DependentUpon>Broodstock.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Broodstock.aspx.designer.cs">
+    <Compile Include="Technicians\Broodstock.aspx.designer.cs">
       <DependentUpon>Broodstock.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BroodstockBatch.aspx.cs">
+    <Compile Include="Technicians\BroodstockBatch.aspx.cs">
       <DependentUpon>BroodstockBatch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BroodstockBatch.aspx.designer.cs">
+    <Compile Include="Technicians\BroodstockBatch.aspx.designer.cs">
       <DependentUpon>BroodstockBatch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -438,35 +439,35 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="broodstockMonitoring.aspx.cs">
+    <Compile Include="Technicians\broodstockMonitoring.aspx.cs">
       <DependentUpon>broodstockMonitoring.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="broodstockMonitoring.aspx.designer.cs">
+    <Compile Include="Technicians\broodstockMonitoring.aspx.designer.cs">
       <DependentUpon>broodstockMonitoring.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProductionCycle.aspx.cs">
+    <Compile Include="Managers\ProductionCycle.aspx.cs">
       <DependentUpon>ProductionCycle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProductionCycle.aspx.designer.cs">
+    <Compile Include="Managers\ProductionCycle.aspx.designer.cs">
       <DependentUpon>ProductionCycle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PLMonitor.aspx.cs">
+    <Compile Include="Technicians\PLMonitor.aspx.cs">
       <DependentUpon>PLMonitor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PLMonitor.aspx.designer.cs">
+    <Compile Include="Technicians\PLMonitor.aspx.designer.cs">
       <DependentUpon>PLMonitor.aspx</DependentUpon>
     </Compile>
     <Compile Include="WaterParameterPostLarva.cs">
       <DependentUpon>HatcheryDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="WaterParameterForm.aspx.cs">
+    <Compile Include="Technicians\WaterParameterForm.aspx.cs">
       <DependentUpon>WaterParameterForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WaterParameterForm.aspx.designer.cs">
+    <Compile Include="Technicians\WaterParameterForm.aspx.designer.cs">
       <DependentUpon>WaterParameterForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm8.aspx.cs">
@@ -476,11 +477,16 @@
     <Compile Include="WebForm8.aspx.designer.cs">
       <DependentUpon>WebForm8.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Technicians\HarvestForm.aspx.cs">
+      <DependentUpon>HarvestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Technicians\HarvestForm.aspx.designer.cs">
+      <DependentUpon>HarvestForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Managers\" />
-    <Folder Include="Technicians\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />

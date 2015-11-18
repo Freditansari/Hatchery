@@ -19,6 +19,7 @@ namespace Hatchery
             Page.Validate();
             if (Page.IsValid)
             {
+                BtnAddRecord.Enabled = false;
                 HatcheryEntities db = new HatcheryEntities();
                 WaterParameterPostLarva newWaterParameter = new WaterParameterPostLarva();
                 newWaterParameter.ModuleName = ModuleDropDownList.SelectedValue;
@@ -36,6 +37,8 @@ namespace Hatchery
 
                 db.WaterParameterPostLarvas.Add(newWaterParameter);
                 db.SaveChanges();
+
+                BtnAddRecord.Enabled = true;
 
             }
 
