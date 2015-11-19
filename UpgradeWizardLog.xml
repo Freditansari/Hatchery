@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Hatchery.csproj" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\About.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\About.aspx" />
+  <event action="Analyze" type="Success" name="About.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\About.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Login.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Manage.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Manage.aspx" />
+  <event action="Analyze" type="Success" name="Manage.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Manage.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\OpenAuthProviders.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\OpenAuthProviders.ascx" />
+  <event action="Analyze" type="Success" name="OpenAuthProviders.ascx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\OpenAuthProviders.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Register.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Register.aspx" />
+  <event action="Analyze" type="Success" name="Register.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Register.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\RegisterExternalLogin.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\RegisterExternalLogin.aspx" />
+  <event action="Analyze" type="Success" name="RegisterExternalLogin.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\RegisterExternalLogin.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Account\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Bundle.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Bundle.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Contact.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Contact.aspx" />
+  <event action="Analyze" type="Success" name="Contact.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Contact.aspx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Managers\ProductionCycle.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Managers\ProductionCycle.aspx" />
+  <event action="Analyze" type="Success" name="ProductionCycle.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Managers\ProductionCycle.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\packages.config" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Site.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Site.Master" />
+  <event action="Analyze" type="Success" name="Site.Master" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Site.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Site.Mobile.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Site.Mobile.Master" />
+  <event action="Analyze" type="Success" name="Site.Mobile.Master" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Site.Mobile.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\Broodstock.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\Broodstock.aspx" />
+  <event action="Analyze" type="Success" name="Broodstock.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\Broodstock.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\BroodstockBatch.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\BroodstockBatch.aspx" />
+  <event action="Analyze" type="Success" name="BroodstockBatch.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\BroodstockBatch.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\broodstockMonitoring.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\broodstockMonitoring.aspx" />
+  <event action="Analyze" type="Success" name="broodstockMonitoring.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\broodstockMonitoring.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\HarvestForm.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\HarvestForm.aspx" />
+  <event action="Analyze" type="Success" name="HarvestForm.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\HarvestForm.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\PLMonitor.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\PLMonitor.aspx" />
+  <event action="Analyze" type="Success" name="PLMonitor.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\PLMonitor.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\WaterParameterForm.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\WaterParameterForm.aspx" />
+  <event action="Analyze" type="Success" name="WaterParameterForm.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Technicians\WaterParameterForm.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\ViewSwitcher.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\ViewSwitcher.ascx" />
+  <event action="Analyze" type="Success" name="ViewSwitcher.ascx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\ViewSwitcher.ascx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Web.Release.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\WebForm8.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\WebForm8.aspx" />
+  <event action="Analyze" type="Success" name="WebForm8.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\WebForm8.aspx" />
+  <event action="Analyze" type="Success" name="Hatchery" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Hatchery.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\HatcheryReports.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\app.config" />
+  <event action="Analyze" type="Success" name="broodstockReports.resx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\broodstockReports.resx" />
+  <event action="Analyze" type="Success" name="HatcheryReports" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\HatcheryReports.csproj" />
+  <event action="Analyze" type="Success" name="Hatchery" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Hatchery.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Upgrade" type="Success" name="Http Handlers" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Upgrade" type="Success" name="Handlers (IIS7+)" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Upgrade" type="Success" name="Web.config" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Web.config" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\WebForm8.aspx" />
+  <event action="Upgrade" type="Success" name="WebForm8.aspx" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\WebForm8.aspx" />
+  <event action="Upgrade" type="Success" name="Hatchery" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery\Hatchery.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\HatcheryReports.csproj" />
+  <event action="Upgrade" type="Success" name="HatcheryReports" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\HatcheryReports.csproj" />
+  <event action="Upgrade" type="Success" name="Hatchery" path="C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\Hatchery.sln" />
+</log>

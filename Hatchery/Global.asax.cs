@@ -6,6 +6,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using Hatchery;
+using System.Web.Http;
+using Telerik.Reporting.Services.WebApi;
 
 namespace Hatchery
 {
@@ -13,6 +15,7 @@ namespace Hatchery
     {
         void Application_Start(object sender, EventArgs e)
         {
+            ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
             // Code that runs on application startup
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();

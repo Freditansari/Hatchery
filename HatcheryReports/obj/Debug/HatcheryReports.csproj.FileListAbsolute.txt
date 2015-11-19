@@ -1,0 +1,8 @@
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\bin\Debug\HatcheryReports.dll.config
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\bin\Debug\HatcheryReports.dll
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\bin\Debug\HatcheryReports.pdb
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\obj\Debug\HatcheryReports.csproj.GenerateResource.Cache
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\obj\Debug\HatcheryReports.dll
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\obj\Debug\HatcheryReports.pdb
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\obj\Debug\HatcheryReports.broodstockReports.resources
+C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReports\obj\Debug\HatcheryReports.dll.licenses

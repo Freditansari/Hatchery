@@ -90,11 +90,11 @@
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
-                                        <telerik:RadMenuItem runat="server" Text="Modules">
+                                        <telerik:RadMenuItem runat="server" Text="Reports">
                                         </telerik:RadMenuItem>
-                                        <telerik:RadMenuItem runat="server" Text="Root RadMenuItem4" NavigateUrl="~/WebForm8.aspx">
+                                        <telerik:RadMenuItem runat="server" Text="Utilities" NavigateUrl="~/WebForm8.aspx">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WebForm8.aspx" Text="Child RadMenuItem 1">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WebForm8.aspx" Text="placeholder">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>

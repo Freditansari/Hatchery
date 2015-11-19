@@ -88,7 +88,7 @@
             <td>Userid:</td>
             <td></td>
             <td colspan="2">
-                <asp:TextBox ID="TxtUserid" runat="server" MaxLength="0" />
+                <asp:TextBox ID="TxtUserid" runat="server" MaxLength="0" ReadOnly="True" />
             </td>
         </tr>
         <tr>

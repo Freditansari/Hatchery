@@ -13,6 +13,7 @@ namespace Hatchery
         {
             TxtDate.Text = DateTime.Now.Date.ToString().Substring(0,10);
             TxtTime.Text = DateTime.Now.TimeOfDay.ToString();
+            TxtUserid.Text = User.Identity.Name.ToString();
         }
 
         protected void BtnAddRecord_Click(object sender, EventArgs e)
@@ -34,6 +35,12 @@ namespace Hatchery
                 db.Harvests.Add(newHarvest);
                 db.SaveChanges();
 
+                var ProdCycleQuery = from ProdCycle in db.ProductionCycles where ProdCycle.ProductionCycleID == newHarvest.ProductionCycleID select ProdCycle;
+                ProductionCycle selectedCycle = ProdCycleQuery.Single();
+
+                selectedCycle.isInProduction = false;
+
+                db.SaveChanges();
             }
 
         }
