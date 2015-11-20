@@ -47,7 +47,7 @@
         <tr>
             <td class="auto-style2">Date</td>
             <td class="auto-style5">
-                <telerik:RadDatePicker ID="BroodstockLogDateDatePicker" Runat="server" Culture="en-US"  DateInput-DateFormat="MM/dd/yyyy" FocusedDate="2015-11-10" MinDate="2000-11-10">
+                <telerik:RadDatePicker ID="BroodstockLogDateDatePicker" Runat="server" Culture="en-US"  DateInput-DateFormat="MM/dd/yyyy" MinDate="2000-11-10">
 <Calendar UseRowHeadersAsSelectors="False" UseColumnHeadersAsSelectors="False" EnableWeekends="True" FastNavigationNextText="&amp;lt;&amp;lt;"></Calendar>
 
 <DateInput DisplayDateFormat="M/d/yyyy"  DateFormat="M/d/yyyy" LabelWidth="40%" displaytext="11/10/2015" value="11/10/2015">

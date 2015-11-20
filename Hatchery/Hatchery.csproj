@@ -255,6 +255,8 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Managers\BroodstockwaterparameterReport.aspx" />
+    <Content Include="Managers\CompleteBroodstockReportWindow.aspx" />
     <Content Include="packages.config" />
     <Content Include="Technicians\Broodstock.aspx" />
     <Content Include="Technicians\BroodstockBatch.aspx" />
@@ -265,7 +267,8 @@
     <Content Include="Technicians\WaterParameterForm.aspx" />
     <Content Include="Technicians\HarvestForm.aspx" />
     <Content Include="WebForm10.aspx" />
-    <Content Include="WebForm8.aspx" />
+    <Content Include="Managers\NaupliiEfficiencyReport.aspx" />
+    <Content Include="Managers\ReportWindows.aspx" />
     <EntityDeploy Include="HatcheryDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HatcheryDataModel.Designer.cs</LastGenOutput>
@@ -412,6 +415,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HatcheryDataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Managers\BroodstockwaterparameterReport.aspx.cs">
+      <DependentUpon>BroodstockwaterparameterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\BroodstockwaterparameterReport.aspx.designer.cs">
+      <DependentUpon>BroodstockwaterparameterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\CompleteBroodstockReportWindow.aspx.cs">
+      <DependentUpon>CompleteBroodstockReportWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\CompleteBroodstockReportWindow.aspx.designer.cs">
+      <DependentUpon>CompleteBroodstockReportWindow.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterBatch.cs">
       <DependentUpon>HatcheryDataModel.tt</DependentUpon>
     </Compile>
@@ -512,12 +529,19 @@
     <Compile Include="WebForm10.aspx.designer.cs">
       <DependentUpon>WebForm10.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm8.aspx.cs">
-      <DependentUpon>WebForm8.aspx</DependentUpon>
+    <Compile Include="Managers\NaupliiEfficiencyReport.aspx.cs">
+      <DependentUpon>NaupliiEfficiencyReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm8.aspx.designer.cs">
-      <DependentUpon>WebForm8.aspx</DependentUpon>
+    <Compile Include="Managers\NaupliiEfficiencyReport.aspx.designer.cs">
+      <DependentUpon>NaupliiEfficiencyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\ReportWindows.aspx.cs">
+      <DependentUpon>ReportWindows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\ReportWindows.aspx.designer.cs">
+      <DependentUpon>ReportWindows.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

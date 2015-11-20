@@ -118,6 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="sqlDataSource1.ParameterValues" xml:space="preserve">
-    <value>{"@BatchParameter":"3"}</value>
+    <value>{"@batchParameter":"3"}</value>
   </metadata>
+  <data name="sqlDataSource1.SelectCommand" xml:space="preserve">
+    <value>SELECT        Batch, Date, Male, Female, TotalPopulation, DeadMale, DeadFemale, Mortality, Salinity, MatTemp, HatcTemp, DO, PH, PolychaeteIn, PolychaeteUsed, 
+                         PolychaeteBalance, SquidIn, SquidUsed, SquidiBalance, FR, EDTA, Formaldehyde, Treflan, Iodine, Vitamin, Matured, Mated, Spawned, Egg, NaupliiBruto, 
+                         NaupliiNetto, Flush, Distribution, Remark, userID
+FROM            CompleteBroodstockView
+WHERE        (Batch = @batchParameter)
+ORDER BY Date</value>
+  </data>
 </root>

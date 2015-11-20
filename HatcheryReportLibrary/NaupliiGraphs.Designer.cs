@@ -14,6 +14,7 @@ namespace HatcheryReportLibrary
             Telerik.Reporting.DateTimeScale dateTimeScale1 = new Telerik.Reporting.DateTimeScale();
             Telerik.Reporting.NumericalScale numericalScale1 = new Telerik.Reporting.NumericalScale();
             Telerik.Reporting.GraphGroup graphGroup2 = new Telerik.Reporting.GraphGroup();
+            Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
             Telerik.Reporting.Drawing.StyleRule styleRule1 = new Telerik.Reporting.Drawing.StyleRule();
             this.detailSection1 = new Telerik.Reporting.DetailSection();
             this.graph1 = new Telerik.Reporting.Graph();
@@ -87,6 +88,7 @@ namespace HatcheryReportLibrary
             // 
             // graphAxis1
             // 
+            this.graphAxis1.LabelFormat = "{0:P0}";
             this.graphAxis1.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
             this.graphAxis1.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis1.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
@@ -100,8 +102,10 @@ namespace HatcheryReportLibrary
             // 
             this.sqlDataSource1.ConnectionString = "HatcheryReportLibrary.Properties.Settings.Hatchery";
             this.sqlDataSource1.Name = "sqlDataSource1";
+            this.sqlDataSource1.Parameters.AddRange(new Telerik.Reporting.SqlDataSourceParameter[] {
+            new Telerik.Reporting.SqlDataSourceParameter("@SelectedBatch", System.Data.DbType.String, "= Parameters.SelectedBatch.Value")});
             this.sqlDataSource1.SelectCommand = "SELECT        Batch, Date, Egg, NaupliiBruto, NaupliiNetto, HatchingRate, Nauplii" +
-    "Efficiency\r\nFROM            NaupliiView";
+    "Efficiency\r\nFROM            NaupliiView\r\nwhere batch = @SelectedBatch";
             // 
             // lineSeries1
             // 
@@ -150,6 +154,11 @@ namespace HatcheryReportLibrary
             this.PageSettings.Landscape = true;
             this.PageSettings.Margins = new Telerik.Reporting.Drawing.MarginsU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(1D));
             this.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Letter;
+            reportParameter1.AllowNull = true;
+            reportParameter1.Name = "SelectedBatch";
+            reportParameter1.Text = "SelectedBatch";
+            reportParameter1.Type = Telerik.Reporting.ReportParameterType.Integer;
+            this.ReportParameters.Add(reportParameter1);
             styleRule1.Selectors.AddRange(new Telerik.Reporting.Drawing.ISelector[] {
             new Telerik.Reporting.Drawing.TypeSelector(typeof(Telerik.Reporting.TextItemBase)),
             new Telerik.Reporting.Drawing.TypeSelector(typeof(Telerik.Reporting.HtmlTextBox))});

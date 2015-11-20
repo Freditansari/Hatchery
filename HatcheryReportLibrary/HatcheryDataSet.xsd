@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HatcheryDataSet" targetNamespace="http://tempuri.org/HatcheryDataSet.xsd" xmlns:mstns="http://tempuri.org/HatcheryDataSet.xsd" xmlns="http://tempuri.org/HatcheryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Hatchery" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Hatchery (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HatcheryReportLibrary.Properties.Settings.GlobalReference.Default.Hatchery" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CompleteBroodstockViewTableAdapter" GeneratorDataComponentClassName="CompleteBroodstockViewTableAdapter" Name="CompleteBroodstockView" UserDataComponentName="CompleteBroodstockViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Hatchery (Settings)" DbObjectName="Hatchery.dbo.CompleteBroodstockView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Batch, Date, Male, Female, TotalPopulation, DeadMale, DeadFemale, Mortality, Salinity, MatTemp, HatcTemp, DO, PH, PolychaeteIn, PolychaeteUsed, PolychaeteBalance, SquidIn, SquidUsed, SquidiBalance, FR, EDTA, Formaldehyde, Treflan, Iodine, Vitamin, Matured, Mated, Spawned, Egg, NaupliiBruto, NaupliiNetto, Flush, Distribution, Remark, userID FROM dbo.CompleteBroodstockView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Batch" DataSetColumn="Batch" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="Male" DataSetColumn="Male" />
+              <Mapping SourceColumn="Female" DataSetColumn="Female" />
+              <Mapping SourceColumn="TotalPopulation" DataSetColumn="TotalPopulation" />
+              <Mapping SourceColumn="DeadMale" DataSetColumn="DeadMale" />
+              <Mapping SourceColumn="DeadFemale" DataSetColumn="DeadFemale" />
+              <Mapping SourceColumn="Mortality" DataSetColumn="Mortality" />
+              <Mapping SourceColumn="Salinity" DataSetColumn="Salinity" />
+              <Mapping SourceColumn="MatTemp" DataSetColumn="MatTemp" />
+              <Mapping SourceColumn="HatcTemp" DataSetColumn="HatcTemp" />
+              <Mapping SourceColumn="DO" DataSetColumn="DO" />
+              <Mapping SourceColumn="PH" DataSetColumn="PH" />
+              <Mapping SourceColumn="PolychaeteIn" DataSetColumn="PolychaeteIn" />
+              <Mapping SourceColumn="PolychaeteUsed" DataSetColumn="PolychaeteUsed" />
+              <Mapping SourceColumn="PolychaeteBalance" DataSetColumn="PolychaeteBalance" />
+              <Mapping SourceColumn="SquidIn" DataSetColumn="SquidIn" />
+              <Mapping SourceColumn="SquidUsed" DataSetColumn="SquidUsed" />
+              <Mapping SourceColumn="SquidiBalance" DataSetColumn="SquidiBalance" />
+              <Mapping SourceColumn="FR" DataSetColumn="FR" />
+              <Mapping SourceColumn="EDTA" DataSetColumn="EDTA" />
+              <Mapping SourceColumn="Formaldehyde" DataSetColumn="Formaldehyde" />
+              <Mapping SourceColumn="Treflan" DataSetColumn="Treflan" />
+              <Mapping SourceColumn="Iodine" DataSetColumn="Iodine" />
+              <Mapping SourceColumn="Vitamin" DataSetColumn="Vitamin" />
+              <Mapping SourceColumn="Matured" DataSetColumn="Matured" />
+              <Mapping SourceColumn="Mated" DataSetColumn="Mated" />
+              <Mapping SourceColumn="Spawned" DataSetColumn="Spawned" />
+              <Mapping SourceColumn="Egg" DataSetColumn="Egg" />
+              <Mapping SourceColumn="NaupliiBruto" DataSetColumn="NaupliiBruto" />
+              <Mapping SourceColumn="NaupliiNetto" DataSetColumn="NaupliiNetto" />
+              <Mapping SourceColumn="Flush" DataSetColumn="Flush" />
+              <Mapping SourceColumn="Distribution" DataSetColumn="Distribution" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="userID" DataSetColumn="userID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HatcheryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HatcheryDataSet" msprop:Generator_UserDSName="HatcheryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CompleteBroodstockView" msprop:Generator_TableClassName="CompleteBroodstockViewDataTable" msprop:Generator_TableVarName="tableCompleteBroodstockView" msprop:Generator_TablePropName="CompleteBroodstockView" msprop:Generator_RowDeletingName="CompleteBroodstockViewRowDeleting" msprop:Generator_RowChangingName="CompleteBroodstockViewRowChanging" msprop:Generator_RowEvHandlerName="CompleteBroodstockViewRowChangeEventHandler" msprop:Generator_RowDeletedName="CompleteBroodstockViewRowDeleted" msprop:Generator_UserTableName="CompleteBroodstockView" msprop:Generator_RowChangedName="CompleteBroodstockViewRowChanged" msprop:Generator_RowEvArgName="CompleteBroodstockViewRowChangeEvent" msprop:Generator_RowClassName="CompleteBroodstockViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Batch" msprop:Generator_ColumnVarNameInTable="columnBatch" msprop:Generator_ColumnPropNameInRow="Batch" msprop:Generator_ColumnPropNameInTable="BatchColumn" msprop:Generator_UserColumnName="Batch" type="xs:int" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Male" msprop:Generator_ColumnVarNameInTable="columnMale" msprop:Generator_ColumnPropNameInRow="Male" msprop:Generator_ColumnPropNameInTable="MaleColumn" msprop:Generator_UserColumnName="Male" type="xs:int" minOccurs="0" />
+              <xs:element name="Female" msprop:Generator_ColumnVarNameInTable="columnFemale" msprop:Generator_ColumnPropNameInRow="Female" msprop:Generator_ColumnPropNameInTable="FemaleColumn" msprop:Generator_UserColumnName="Female" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalPopulation" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalPopulation" msprop:Generator_ColumnPropNameInRow="TotalPopulation" msprop:Generator_ColumnPropNameInTable="TotalPopulationColumn" msprop:Generator_UserColumnName="TotalPopulation" type="xs:int" minOccurs="0" />
+              <xs:element name="DeadMale" msprop:Generator_ColumnVarNameInTable="columnDeadMale" msprop:Generator_ColumnPropNameInRow="DeadMale" msprop:Generator_ColumnPropNameInTable="DeadMaleColumn" msprop:Generator_UserColumnName="DeadMale" type="xs:int" minOccurs="0" />
+              <xs:element name="DeadFemale" msprop:Generator_ColumnVarNameInTable="columnDeadFemale" msprop:Generator_ColumnPropNameInRow="DeadFemale" msprop:Generator_ColumnPropNameInTable="DeadFemaleColumn" msprop:Generator_UserColumnName="DeadFemale" type="xs:int" minOccurs="0" />
+              <xs:element name="Mortality" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMortality" msprop:Generator_ColumnPropNameInRow="Mortality" msprop:Generator_ColumnPropNameInTable="MortalityColumn" msprop:Generator_UserColumnName="Mortality" type="xs:int" minOccurs="0" />
+              <xs:element name="Salinity" msprop:Generator_ColumnVarNameInTable="columnSalinity" msprop:Generator_ColumnPropNameInRow="Salinity" msprop:Generator_ColumnPropNameInTable="SalinityColumn" msprop:Generator_UserColumnName="Salinity" type="xs:double" minOccurs="0" />
+              <xs:element name="MatTemp" msprop:Generator_ColumnVarNameInTable="columnMatTemp" msprop:Generator_ColumnPropNameInRow="MatTemp" msprop:Generator_ColumnPropNameInTable="MatTempColumn" msprop:Generator_UserColumnName="MatTemp" type="xs:double" minOccurs="0" />
+              <xs:element name="HatcTemp" msprop:Generator_ColumnVarNameInTable="columnHatcTemp" msprop:Generator_ColumnPropNameInRow="HatcTemp" msprop:Generator_ColumnPropNameInTable="HatcTempColumn" msprop:Generator_UserColumnName="HatcTemp" type="xs:double" minOccurs="0" />
+              <xs:element name="DO" msprop:Generator_ColumnVarNameInTable="columnDO" msprop:Generator_ColumnPropNameInRow="DO" msprop:Generator_ColumnPropNameInTable="DOColumn" msprop:Generator_UserColumnName="DO" type="xs:double" minOccurs="0" />
+              <xs:element name="PH" msprop:Generator_ColumnVarNameInTable="columnPH" msprop:Generator_ColumnPropNameInRow="PH" msprop:Generator_ColumnPropNameInTable="PHColumn" msprop:Generator_UserColumnName="PH" type="xs:double" minOccurs="0" />
+              <xs:element name="PolychaeteIn" msprop:Generator_ColumnVarNameInTable="columnPolychaeteIn" msprop:Generator_ColumnPropNameInRow="PolychaeteIn" msprop:Generator_ColumnPropNameInTable="PolychaeteInColumn" msprop:Generator_UserColumnName="PolychaeteIn" type="xs:double" minOccurs="0" />
+              <xs:element name="PolychaeteUsed" msprop:Generator_ColumnVarNameInTable="columnPolychaeteUsed" msprop:Generator_ColumnPropNameInRow="PolychaeteUsed" msprop:Generator_ColumnPropNameInTable="PolychaeteUsedColumn" msprop:Generator_UserColumnName="PolychaeteUsed" type="xs:double" minOccurs="0" />
+              <xs:element name="PolychaeteBalance" msprop:Generator_ColumnVarNameInTable="columnPolychaeteBalance" msprop:Generator_ColumnPropNameInRow="PolychaeteBalance" msprop:Generator_ColumnPropNameInTable="PolychaeteBalanceColumn" msprop:Generator_UserColumnName="PolychaeteBalance" type="xs:double" minOccurs="0" />
+              <xs:element name="SquidIn" msprop:Generator_ColumnVarNameInTable="columnSquidIn" msprop:Generator_ColumnPropNameInRow="SquidIn" msprop:Generator_ColumnPropNameInTable="SquidInColumn" msprop:Generator_UserColumnName="SquidIn" type="xs:double" minOccurs="0" />
+              <xs:element name="SquidUsed" msprop:Generator_ColumnVarNameInTable="columnSquidUsed" msprop:Generator_ColumnPropNameInRow="SquidUsed" msprop:Generator_ColumnPropNameInTable="SquidUsedColumn" msprop:Generator_UserColumnName="SquidUsed" type="xs:double" minOccurs="0" />
+              <xs:element name="SquidiBalance" msprop:Generator_ColumnVarNameInTable="columnSquidiBalance" msprop:Generator_ColumnPropNameInRow="SquidiBalance" msprop:Generator_ColumnPropNameInTable="SquidiBalanceColumn" msprop:Generator_UserColumnName="SquidiBalance" type="xs:double" minOccurs="0" />
+              <xs:element name="FR" msprop:Generator_ColumnVarNameInTable="columnFR" msprop:Generator_ColumnPropNameInRow="FR" msprop:Generator_ColumnPropNameInTable="FRColumn" msprop:Generator_UserColumnName="FR" type="xs:double" minOccurs="0" />
+              <xs:element name="EDTA" msprop:Generator_ColumnVarNameInTable="columnEDTA" msprop:Generator_ColumnPropNameInRow="EDTA" msprop:Generator_ColumnPropNameInTable="EDTAColumn" msprop:Generator_UserColumnName="EDTA" type="xs:double" minOccurs="0" />
+              <xs:element name="Formaldehyde" msprop:Generator_ColumnVarNameInTable="columnFormaldehyde" msprop:Generator_ColumnPropNameInRow="Formaldehyde" msprop:Generator_ColumnPropNameInTable="FormaldehydeColumn" msprop:Generator_UserColumnName="Formaldehyde" type="xs:double" minOccurs="0" />
+              <xs:element name="Treflan" msprop:Generator_ColumnVarNameInTable="columnTreflan" msprop:Generator_ColumnPropNameInRow="Treflan" msprop:Generator_ColumnPropNameInTable="TreflanColumn" msprop:Generator_UserColumnName="Treflan" type="xs:double" minOccurs="0" />
+              <xs:element name="Iodine" msprop:Generator_ColumnVarNameInTable="columnIodine" msprop:Generator_ColumnPropNameInRow="Iodine" msprop:Generator_ColumnPropNameInTable="IodineColumn" msprop:Generator_UserColumnName="Iodine" type="xs:double" minOccurs="0" />
+              <xs:element name="Vitamin" msprop:Generator_ColumnVarNameInTable="columnVitamin" msprop:Generator_ColumnPropNameInRow="Vitamin" msprop:Generator_ColumnPropNameInTable="VitaminColumn" msprop:Generator_UserColumnName="Vitamin" type="xs:double" minOccurs="0" />
+              <xs:element name="Matured" msprop:Generator_ColumnVarNameInTable="columnMatured" msprop:Generator_ColumnPropNameInRow="Matured" msprop:Generator_ColumnPropNameInTable="MaturedColumn" msprop:Generator_UserColumnName="Matured" type="xs:int" minOccurs="0" />
+              <xs:element name="Mated" msprop:Generator_ColumnVarNameInTable="columnMated" msprop:Generator_ColumnPropNameInRow="Mated" msprop:Generator_ColumnPropNameInTable="MatedColumn" msprop:Generator_UserColumnName="Mated" type="xs:int" minOccurs="0" />
+              <xs:element name="Spawned" msprop:Generator_ColumnVarNameInTable="columnSpawned" msprop:Generator_ColumnPropNameInRow="Spawned" msprop:Generator_ColumnPropNameInTable="SpawnedColumn" msprop:Generator_UserColumnName="Spawned" type="xs:int" minOccurs="0" />
+              <xs:element name="Egg" msprop:Generator_ColumnVarNameInTable="columnEgg" msprop:Generator_ColumnPropNameInRow="Egg" msprop:Generator_ColumnPropNameInTable="EggColumn" msprop:Generator_UserColumnName="Egg" type="xs:double" minOccurs="0" />
+              <xs:element name="NaupliiBruto" msprop:Generator_ColumnVarNameInTable="columnNaupliiBruto" msprop:Generator_ColumnPropNameInRow="NaupliiBruto" msprop:Generator_ColumnPropNameInTable="NaupliiBrutoColumn" msprop:Generator_UserColumnName="NaupliiBruto" type="xs:double" minOccurs="0" />
+              <xs:element name="NaupliiNetto" msprop:Generator_ColumnVarNameInTable="columnNaupliiNetto" msprop:Generator_ColumnPropNameInRow="NaupliiNetto" msprop:Generator_ColumnPropNameInTable="NaupliiNettoColumn" msprop:Generator_UserColumnName="NaupliiNetto" type="xs:double" minOccurs="0" />
+              <xs:element name="Flush" msprop:Generator_ColumnVarNameInTable="columnFlush" msprop:Generator_ColumnPropNameInRow="Flush" msprop:Generator_ColumnPropNameInTable="FlushColumn" msprop:Generator_UserColumnName="Flush" type="xs:double" minOccurs="0" />
+              <xs:element name="Distribution" msprop:Generator_ColumnVarNameInTable="columnDistribution" msprop:Generator_ColumnPropNameInRow="Distribution" msprop:Generator_ColumnPropNameInTable="DistributionColumn" msprop:Generator_UserColumnName="Distribution" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="userID" msprop:Generator_ColumnVarNameInTable="columnuserID" msprop:Generator_ColumnPropNameInRow="userID" msprop:Generator_ColumnPropNameInTable="userIDColumn" msprop:Generator_UserColumnName="userID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

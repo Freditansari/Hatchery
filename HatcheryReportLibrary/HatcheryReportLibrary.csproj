@@ -60,11 +60,22 @@
     <Compile Include="BroodstockWaterParameter.Designer.cs">
       <DependentUpon>BroodstockWaterParameter.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompleteBroodstockReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CompleteBroodstockReport.Designer.cs">
+      <DependentUpon>CompleteBroodstockReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="DailyPostLarvaeReport.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DailyPostLarvaeReport.Designer.cs">
       <DependentUpon>DailyPostLarvaeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HatcheryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HatcheryDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="NaupliiGraphs.cs">
       <SubType>Component</SubType>
@@ -87,6 +98,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="HatcheryDataSet.xsc">
+      <DependentUpon>HatcheryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HatcheryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HatcheryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HatcheryDataSet.xss">
+      <DependentUpon>HatcheryDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BroodstockWaterParameter.resx">
       <DependentUpon>BroodstockWaterParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteBroodstockReport.resx">
+      <DependentUpon>CompleteBroodstockReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailyPostLarvaeReport.resx">
       <DependentUpon>DailyPostLarvaeReport.cs</DependentUpon>

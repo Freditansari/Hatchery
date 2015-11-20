@@ -11,16 +11,17 @@ namespace HatcheryReportLibrary
         {
             Telerik.Reporting.GraphGroup graphGroup1 = new Telerik.Reporting.GraphGroup();
             Telerik.Reporting.GraphTitle graphTitle1 = new Telerik.Reporting.GraphTitle();
-            Telerik.Reporting.NumericalScale numericalScale1 = new Telerik.Reporting.NumericalScale();
             Telerik.Reporting.DateTimeScale dateTimeScale1 = new Telerik.Reporting.DateTimeScale();
+            Telerik.Reporting.NumericalScale numericalScale1 = new Telerik.Reporting.NumericalScale();
             Telerik.Reporting.GraphGroup graphGroup2 = new Telerik.Reporting.GraphGroup();
+            Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
             Telerik.Reporting.Drawing.StyleRule styleRule1 = new Telerik.Reporting.Drawing.StyleRule();
             this.detailSection1 = new Telerik.Reporting.DetailSection();
-            this.sqlDataSource1 = new Telerik.Reporting.SqlDataSource();
             this.graph1 = new Telerik.Reporting.Graph();
             this.cartesianCoordinateSystem1 = new Telerik.Reporting.CartesianCoordinateSystem();
-            this.graphAxis1 = new Telerik.Reporting.GraphAxis();
             this.graphAxis2 = new Telerik.Reporting.GraphAxis();
+            this.graphAxis1 = new Telerik.Reporting.GraphAxis();
+            this.sqlDataSource1 = new Telerik.Reporting.SqlDataSource();
             this.lineSeries1 = new Telerik.Reporting.LineSeries();
             this.lineSeries2 = new Telerik.Reporting.LineSeries();
             this.lineSeries3 = new Telerik.Reporting.LineSeries();
@@ -32,13 +33,6 @@ namespace HatcheryReportLibrary
             this.detailSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
             this.graph1});
             this.detailSection1.Name = "detailSection1";
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionString = "HatcheryReportLibrary.Properties.Settings.Hatchery";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            this.sqlDataSource1.SelectCommand = "SELECT        Date, Salinity, MatTemp, HatcTemp, DO, PH, Batch\r\nFROM            B" +
-    "roodstockWaterParameter";
             // 
             // graph1
             // 
@@ -76,16 +70,6 @@ namespace HatcheryReportLibrary
             this.cartesianCoordinateSystem1.XAxis = this.graphAxis2;
             this.cartesianCoordinateSystem1.YAxis = this.graphAxis1;
             // 
-            // graphAxis1
-            // 
-            this.graphAxis1.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graphAxis1.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.graphAxis1.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graphAxis1.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.graphAxis1.MinorGridLineStyle.Visible = false;
-            this.graphAxis1.Name = "graphAxis1";
-            this.graphAxis1.Scale = numericalScale1;
-            // 
             // graphAxis2
             // 
             this.graphAxis2.LabelFormat = "{0:dd/MM}";
@@ -97,6 +81,25 @@ namespace HatcheryReportLibrary
             this.graphAxis2.Name = "graphAxis2";
             dateTimeScale1.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
             this.graphAxis2.Scale = dateTimeScale1;
+            // 
+            // graphAxis1
+            // 
+            this.graphAxis1.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis1.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis1.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis1.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis1.MinorGridLineStyle.Visible = false;
+            this.graphAxis1.Name = "graphAxis1";
+            this.graphAxis1.Scale = numericalScale1;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionString = "HatcheryReportLibrary.Properties.Settings.Hatchery";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            this.sqlDataSource1.Parameters.AddRange(new Telerik.Reporting.SqlDataSourceParameter[] {
+            new Telerik.Reporting.SqlDataSourceParameter("@BatchParameter", System.Data.DbType.String, "= Parameters.BatchParameter.Value")});
+            this.sqlDataSource1.SelectCommand = "SELECT        Date, Salinity, MatTemp, HatcTemp, DO, PH, Batch\r\nFROM            B" +
+    "roodstockWaterParameter\r\nwhere batch = @BatchParameter";
             // 
             // lineSeries1
             // 
@@ -163,6 +166,11 @@ namespace HatcheryReportLibrary
             this.PageSettings.Landscape = true;
             this.PageSettings.Margins = new Telerik.Reporting.Drawing.MarginsU(Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Inch(0D));
             this.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Letter;
+            reportParameter1.Name = "BatchParameter";
+            reportParameter1.Text = "BatchParameter";
+            reportParameter1.Type = Telerik.Reporting.ReportParameterType.Integer;
+            reportParameter1.Visible = true;
+            this.ReportParameters.Add(reportParameter1);
             styleRule1.Selectors.AddRange(new Telerik.Reporting.Drawing.ISelector[] {
             new Telerik.Reporting.Drawing.TypeSelector(typeof(Telerik.Reporting.TextItemBase)),
             new Telerik.Reporting.Drawing.TypeSelector(typeof(Telerik.Reporting.HtmlTextBox))});

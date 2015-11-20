@@ -61,16 +61,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/11/2015 10:51:33</publishTime>
     </File>
     <File Include="bin/Hatchery.dll">
-      <publishTime>11/19/2015 11:39:41</publishTime>
+      <publishTime>11/20/2015 10:38:20</publishTime>
     </File>
     <File Include="bin/Hatchery.pdb">
-      <publishTime>11/19/2015 11:39:41</publishTime>
+      <publishTime>11/20/2015 10:38:20</publishTime>
     </File>
     <File Include="bin/HatcheryReportLibrary.dll">
-      <publishTime>11/19/2015 11:34:43</publishTime>
+      <publishTime>11/20/2015 10:38:16</publishTime>
     </File>
     <File Include="bin/HatcheryReportLibrary.pdb">
-      <publishTime>11/19/2015 11:34:43</publishTime>
+      <publishTime>11/20/2015 10:38:15</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>11/11/2015 10:51:34</publishTime>
@@ -375,8 +375,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/orderedList9.png">
       <publishTime>11/09/2015 12:04:52</publishTime>
     </File>
+    <File Include="Managers/BroodstockwaterparameterReport.aspx">
+      <publishTime>11/20/2015 10:34:52</publishTime>
+    </File>
+    <File Include="Managers/NaupliiEfficiencyReport.aspx">
+      <publishTime>11/20/2015 09:36:40</publishTime>
+    </File>
     <File Include="Managers/ProductionCycle.aspx">
       <publishTime>11/11/2015 14:21:27</publishTime>
+    </File>
+    <File Include="Managers/ReportWindows.aspx">
+      <publishTime>11/20/2015 10:38:14</publishTime>
     </File>
     <File Include="Managers/WebForm8.aspx">
       <publishTime>11/17/2015 13:57:23</publishTime>
@@ -484,10 +493,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/10/2015 14:39:09</publishTime>
     </File>
     <File Include="Technicians/broodstockMonitoring.aspx">
-      <publishTime>11/11/2015 10:58:28</publishTime>
+      <publishTime>11/19/2015 19:51:45</publishTime>
     </File>
     <File Include="Technicians/HarvestForm.aspx">
-      <publishTime>11/18/2015 12:50:55</publishTime>
+      <publishTime>11/19/2015 15:01:48</publishTime>
     </File>
     <File Include="Technicians/PLMonitor.aspx">
       <publishTime>11/17/2015 12:07:28</publishTime>
@@ -502,7 +511,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/17/2015 14:39:12</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/19/2015 11:40:28</publishTime>
+      <publishTime>11/20/2015 10:39:53</publishTime>
     </File>
     <File Include="WebForm10.aspx">
       <publishTime>11/19/2015 09:34:35</publishTime>

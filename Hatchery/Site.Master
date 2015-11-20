@@ -90,7 +90,7 @@
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>
-                                        <telerik:RadMenuItem runat="server" Text="Reports">
+                                        <telerik:RadMenuItem runat="server" Text="Reports" NavigateUrl="~/Managers/ReportWindows.aspx">
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Utilities" NavigateUrl="~/WebForm8.aspx">
                                             <Items>
