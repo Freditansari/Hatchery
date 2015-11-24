@@ -60,6 +60,12 @@
     <Compile Include="BroodstockWaterParameter.Designer.cs">
       <DependentUpon>BroodstockWaterParameter.cs</DependentUpon>
     </Compile>
+    <Compile Include="BroodstockWaterParameter2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BroodstockWaterParameter2.Designer.cs">
+      <DependentUpon>BroodstockWaterParameter2.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompleteBroodstockReport.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BroodstockWaterParameter.resx">
       <DependentUpon>BroodstockWaterParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BroodstockWaterParameter2.resx">
+      <DependentUpon>BroodstockWaterParameter2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CompleteBroodstockReport.resx">
       <DependentUpon>CompleteBroodstockReport.cs</DependentUpon>

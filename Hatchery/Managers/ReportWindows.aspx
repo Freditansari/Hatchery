@@ -13,11 +13,13 @@
             <td>
                  <telerik:RadMenu ID="RadMenu2" Runat="server">
                     <Items>
-                        <telerik:RadMenuItem runat="server" Text="Nauplii Reports">
+                        <telerik:RadMenuItem runat="server" Text="Broodstocks Reports">
                             <Items>
                                 <telerik:RadMenuItem runat="server" Text="Nauplii Efficiency" NavigateUrl="~/Managers/NaupliiEfficiencyReport.aspx" Target="FrameReport">
                                 </telerik:RadMenuItem>
                                 <telerik:RadMenuItem runat="server" Text="Broodstock Water Parameter" NavigateUrl="~/Managers/BroodstockwaterparameterReport.aspx" Target="FrameReport">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/BroodstockWaterParameter2.aspx" Target="FrameReport" Text="Broodstock Water Parameter 2">
                                 </telerik:RadMenuItem>
                                 <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/CompleteBroodstockReportWindow.aspx" Target="FrameReport" Text="Complete Broodstock Report">
                                 </telerik:RadMenuItem>
@@ -29,8 +31,6 @@
                                 </telerik:RadMenuItem>
                             </Items>
                         </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" Text="Root RadMenuItem3">
-                        </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenu>
                 <br />
@@ -41,7 +41,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td><iframe name="FrameReport" height ="600" width="800" ></iframe></td>
+            <td><iframe name="FrameReport" height ="600" style="width: 898px" ></iframe></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>

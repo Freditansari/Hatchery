@@ -12,6 +12,7 @@ namespace Hatchery
         protected void Page_Load(object sender, EventArgs e)
         {
             WaterParameterDatePicker.SelectedDate = DateTime.Now;
+            TxtUserID.Text = User.Identity.Name.ToString();
         }
 
         protected void BtnAddRecord_Click(object sender, EventArgs e)
@@ -34,6 +35,7 @@ namespace Hatchery
                 newWaterParameter.DO = Convert.ToDouble(TxtDo.Text);
                 newWaterParameter.Remark = TxtRemark.Text;
                 newWaterParameter.Algae = AlgaeTXT.Text;
+                newWaterParameter.userID = TxtUserID.Text;
 
                 db.WaterParameterPostLarvas.Add(newWaterParameter);
                 db.SaveChanges();

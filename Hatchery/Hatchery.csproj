@@ -255,6 +255,7 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Managers\BroodstockWaterParameter2.aspx" />
     <Content Include="Managers\BroodstockwaterparameterReport.aspx" />
     <Content Include="Managers\CompleteBroodstockReportWindow.aspx" />
     <Content Include="packages.config" />
@@ -414,6 +415,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HatcheryDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\BroodstockWaterParameter2.aspx.cs">
+      <DependentUpon>BroodstockWaterParameter2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\BroodstockWaterParameter2.aspx.designer.cs">
+      <DependentUpon>BroodstockWaterParameter2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Managers\BroodstockwaterparameterReport.aspx.cs">
       <DependentUpon>BroodstockwaterparameterReport.aspx</DependentUpon>

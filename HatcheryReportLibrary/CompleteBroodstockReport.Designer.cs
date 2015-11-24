@@ -577,6 +577,7 @@ namespace HatcheryReportLibrary
             // femaleSumFunctionTextBox
             // 
             this.femaleSumFunctionTextBox.CanGrow = true;
+            this.femaleSumFunctionTextBox.Format = "{0:N0}";
             this.femaleSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(2.1526949405670166D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.femaleSumFunctionTextBox.Name = "femaleSumFunctionTextBox";
             this.femaleSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -586,6 +587,7 @@ namespace HatcheryReportLibrary
             // maleSumFunctionTextBox
             // 
             this.maleSumFunctionTextBox.CanGrow = true;
+            this.maleSumFunctionTextBox.Format = "{0:N0}";
             this.maleSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(3.2186257839202881D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.maleSumFunctionTextBox.Name = "maleSumFunctionTextBox";
             this.maleSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -595,6 +597,7 @@ namespace HatcheryReportLibrary
             // totalPopulationSumFunctionTextBox
             // 
             this.totalPopulationSumFunctionTextBox.CanGrow = true;
+            this.totalPopulationSumFunctionTextBox.Format = "{0:N0}";
             this.totalPopulationSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(4.2845563888549805D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.totalPopulationSumFunctionTextBox.Name = "totalPopulationSumFunctionTextBox";
             this.totalPopulationSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -604,6 +607,7 @@ namespace HatcheryReportLibrary
             // deadFemaleSumFunctionTextBox
             // 
             this.deadFemaleSumFunctionTextBox.CanGrow = true;
+            this.deadFemaleSumFunctionTextBox.Format = "{0:N0}";
             this.deadFemaleSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.350487232208252D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.deadFemaleSumFunctionTextBox.Name = "deadFemaleSumFunctionTextBox";
             this.deadFemaleSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -613,6 +617,7 @@ namespace HatcheryReportLibrary
             // deadMaleSumFunctionTextBox
             // 
             this.deadMaleSumFunctionTextBox.CanGrow = true;
+            this.deadMaleSumFunctionTextBox.Format = "{0:N0}";
             this.deadMaleSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.4164180755615234D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.deadMaleSumFunctionTextBox.Name = "deadMaleSumFunctionTextBox";
             this.deadMaleSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -622,6 +627,7 @@ namespace HatcheryReportLibrary
             // mortalitySumFunctionTextBox
             // 
             this.mortalitySumFunctionTextBox.CanGrow = true;
+            this.mortalitySumFunctionTextBox.Format = "{0:N0}";
             this.mortalitySumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(7.4823489189147949D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.mortalitySumFunctionTextBox.Name = "mortalitySumFunctionTextBox";
             this.mortalitySumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -631,6 +637,7 @@ namespace HatcheryReportLibrary
             // pHSumFunctionTextBox
             // 
             this.pHSumFunctionTextBox.CanGrow = true;
+            this.pHSumFunctionTextBox.Format = "{0:N0}";
             this.pHSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.5482797622680664D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.pHSumFunctionTextBox.Name = "pHSumFunctionTextBox";
             this.pHSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -640,7 +647,8 @@ namespace HatcheryReportLibrary
             // dOSumFunctionTextBox
             // 
             this.dOSumFunctionTextBox.CanGrow = true;
-            this.dOSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(9.6142110824584961D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.dOSumFunctionTextBox.Format = "{0:N0}";
+            this.dOSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(9.6142110824584961D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.dOSumFunctionTextBox.Name = "dOSumFunctionTextBox";
             this.dOSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.dOSumFunctionTextBox.StyleName = "Data";
@@ -649,7 +657,8 @@ namespace HatcheryReportLibrary
             // salinitySumFunctionTextBox
             // 
             this.salinitySumFunctionTextBox.CanGrow = true;
-            this.salinitySumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(10.680141448974609D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.salinitySumFunctionTextBox.Format = "{0:N0}";
+            this.salinitySumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(10.680141448974609D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.salinitySumFunctionTextBox.Name = "salinitySumFunctionTextBox";
             this.salinitySumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.salinitySumFunctionTextBox.StyleName = "Data";
@@ -658,7 +667,8 @@ namespace HatcheryReportLibrary
             // matTempSumFunctionTextBox
             // 
             this.matTempSumFunctionTextBox.CanGrow = true;
-            this.matTempSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(11.746072769165039D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.matTempSumFunctionTextBox.Format = "{0:N0}";
+            this.matTempSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(11.746072769165039D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.matTempSumFunctionTextBox.Name = "matTempSumFunctionTextBox";
             this.matTempSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.matTempSumFunctionTextBox.StyleName = "Data";
@@ -667,7 +677,8 @@ namespace HatcheryReportLibrary
             // hatcTempSumFunctionTextBox
             // 
             this.hatcTempSumFunctionTextBox.CanGrow = true;
-            this.hatcTempSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(12.812003135681152D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.hatcTempSumFunctionTextBox.Format = "{0:N0}";
+            this.hatcTempSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(12.812003135681152D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.hatcTempSumFunctionTextBox.Name = "hatcTempSumFunctionTextBox";
             this.hatcTempSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.hatcTempSumFunctionTextBox.StyleName = "Data";
@@ -676,7 +687,8 @@ namespace HatcheryReportLibrary
             // squidInSumFunctionTextBox
             // 
             this.squidInSumFunctionTextBox.CanGrow = true;
-            this.squidInSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(13.877934455871582D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.squidInSumFunctionTextBox.Format = "{0:N0}";
+            this.squidInSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(13.877934455871582D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.squidInSumFunctionTextBox.Name = "squidInSumFunctionTextBox";
             this.squidInSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.squidInSumFunctionTextBox.StyleName = "Data";
@@ -685,7 +697,8 @@ namespace HatcheryReportLibrary
             // squidUsedSumFunctionTextBox
             // 
             this.squidUsedSumFunctionTextBox.CanGrow = true;
-            this.squidUsedSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(14.943864822387695D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.squidUsedSumFunctionTextBox.Format = "{0:N0}";
+            this.squidUsedSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(14.943864822387695D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.squidUsedSumFunctionTextBox.Name = "squidUsedSumFunctionTextBox";
             this.squidUsedSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.squidUsedSumFunctionTextBox.StyleName = "Data";
@@ -694,7 +707,8 @@ namespace HatcheryReportLibrary
             // squidiBalanceSumFunctionTextBox
             // 
             this.squidiBalanceSumFunctionTextBox.CanGrow = true;
-            this.squidiBalanceSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(16.009796142578125D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
+            this.squidiBalanceSumFunctionTextBox.Format = "{0:N0}";
+            this.squidiBalanceSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(16.009796142578125D), Telerik.Reporting.Drawing.Unit.Inch(0.024167537689208984D));
             this.squidiBalanceSumFunctionTextBox.Name = "squidiBalanceSumFunctionTextBox";
             this.squidiBalanceSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.squidiBalanceSumFunctionTextBox.StyleName = "Data";
@@ -703,6 +717,7 @@ namespace HatcheryReportLibrary
             // polychaeteInSumFunctionTextBox
             // 
             this.polychaeteInSumFunctionTextBox.CanGrow = true;
+            this.polychaeteInSumFunctionTextBox.Format = "{0:N0}";
             this.polychaeteInSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(17.075725555419922D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.polychaeteInSumFunctionTextBox.Name = "polychaeteInSumFunctionTextBox";
             this.polychaeteInSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -712,6 +727,7 @@ namespace HatcheryReportLibrary
             // polychaeteUsedSumFunctionTextBox
             // 
             this.polychaeteUsedSumFunctionTextBox.CanGrow = true;
+            this.polychaeteUsedSumFunctionTextBox.Format = "{0:N0}";
             this.polychaeteUsedSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(18.141656875610352D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.polychaeteUsedSumFunctionTextBox.Name = "polychaeteUsedSumFunctionTextBox";
             this.polychaeteUsedSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -721,6 +737,7 @@ namespace HatcheryReportLibrary
             // polychaeteBalanceSumFunctionTextBox
             // 
             this.polychaeteBalanceSumFunctionTextBox.CanGrow = true;
+            this.polychaeteBalanceSumFunctionTextBox.Format = "{0:N0}";
             this.polychaeteBalanceSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(19.207588195800781D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.polychaeteBalanceSumFunctionTextBox.Name = "polychaeteBalanceSumFunctionTextBox";
             this.polychaeteBalanceSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -730,6 +747,7 @@ namespace HatcheryReportLibrary
             // formaldehydeSumFunctionTextBox
             // 
             this.formaldehydeSumFunctionTextBox.CanGrow = true;
+            this.formaldehydeSumFunctionTextBox.Format = "{0:N0}";
             this.formaldehydeSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(20.273519515991211D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.formaldehydeSumFunctionTextBox.Name = "formaldehydeSumFunctionTextBox";
             this.formaldehydeSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -739,6 +757,7 @@ namespace HatcheryReportLibrary
             // eDTASumFunctionTextBox
             // 
             this.eDTASumFunctionTextBox.CanGrow = true;
+            this.eDTASumFunctionTextBox.Format = "{0:N0}";
             this.eDTASumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(21.339448928833008D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.eDTASumFunctionTextBox.Name = "eDTASumFunctionTextBox";
             this.eDTASumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -748,6 +767,7 @@ namespace HatcheryReportLibrary
             // treflanSumFunctionTextBox
             // 
             this.treflanSumFunctionTextBox.CanGrow = true;
+            this.treflanSumFunctionTextBox.Format = "{0:N0}";
             this.treflanSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(22.405380249023438D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.treflanSumFunctionTextBox.Name = "treflanSumFunctionTextBox";
             this.treflanSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -757,6 +777,7 @@ namespace HatcheryReportLibrary
             // iodineSumFunctionTextBox
             // 
             this.iodineSumFunctionTextBox.CanGrow = true;
+            this.iodineSumFunctionTextBox.Format = "{0:N0}";
             this.iodineSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(23.471311569213867D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.iodineSumFunctionTextBox.Name = "iodineSumFunctionTextBox";
             this.iodineSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -766,6 +787,7 @@ namespace HatcheryReportLibrary
             // treflanSumFunctionTextBox1
             // 
             this.treflanSumFunctionTextBox1.CanGrow = true;
+            this.treflanSumFunctionTextBox1.Format = "{0:N0}";
             this.treflanSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(24.537242889404297D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.treflanSumFunctionTextBox1.Name = "treflanSumFunctionTextBox1";
             this.treflanSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -775,6 +797,7 @@ namespace HatcheryReportLibrary
             // vitaminSumFunctionTextBox
             // 
             this.vitaminSumFunctionTextBox.CanGrow = true;
+            this.vitaminSumFunctionTextBox.Format = "{0:N0}";
             this.vitaminSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(25.603172302246094D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.vitaminSumFunctionTextBox.Name = "vitaminSumFunctionTextBox";
             this.vitaminSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -784,6 +807,7 @@ namespace HatcheryReportLibrary
             // matedSumFunctionTextBox
             // 
             this.matedSumFunctionTextBox.CanGrow = true;
+            this.matedSumFunctionTextBox.Format = "{0:N0}";
             this.matedSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(26.669103622436523D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.matedSumFunctionTextBox.Name = "matedSumFunctionTextBox";
             this.matedSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -793,6 +817,7 @@ namespace HatcheryReportLibrary
             // maturedSumFunctionTextBox
             // 
             this.maturedSumFunctionTextBox.CanGrow = true;
+            this.maturedSumFunctionTextBox.Format = "{0:N0}";
             this.maturedSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(27.735034942626953D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.maturedSumFunctionTextBox.Name = "maturedSumFunctionTextBox";
             this.maturedSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -802,6 +827,7 @@ namespace HatcheryReportLibrary
             // spawnedSumFunctionTextBox
             // 
             this.spawnedSumFunctionTextBox.CanGrow = true;
+            this.spawnedSumFunctionTextBox.Format = "{0:N0}";
             this.spawnedSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(28.800966262817383D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.spawnedSumFunctionTextBox.Name = "spawnedSumFunctionTextBox";
             this.spawnedSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -811,6 +837,7 @@ namespace HatcheryReportLibrary
             // eggSumFunctionTextBox
             // 
             this.eggSumFunctionTextBox.CanGrow = true;
+            this.eggSumFunctionTextBox.Format = "{0:N0}";
             this.eggSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(29.86689567565918D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.eggSumFunctionTextBox.Name = "eggSumFunctionTextBox";
             this.eggSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -820,15 +847,17 @@ namespace HatcheryReportLibrary
             // fRSumFunctionTextBox
             // 
             this.fRSumFunctionTextBox.CanGrow = true;
+            this.fRSumFunctionTextBox.Format = "{0:N0}";
             this.fRSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(30.932826995849609D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.fRSumFunctionTextBox.Name = "fRSumFunctionTextBox";
             this.fRSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.fRSumFunctionTextBox.StyleName = "Data";
-            this.fRSumFunctionTextBox.Value = "= Sum(Fields.FR)";
+            this.fRSumFunctionTextBox.Value = "= AVG(Fields.FR)";
             // 
             // naupliiBrutoSumFunctionTextBox
             // 
             this.naupliiBrutoSumFunctionTextBox.CanGrow = true;
+            this.naupliiBrutoSumFunctionTextBox.Format = "{0:N0}";
             this.naupliiBrutoSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(31.998758316040039D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.naupliiBrutoSumFunctionTextBox.Name = "naupliiBrutoSumFunctionTextBox";
             this.naupliiBrutoSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -838,6 +867,7 @@ namespace HatcheryReportLibrary
             // naupliiNettoSumFunctionTextBox
             // 
             this.naupliiNettoSumFunctionTextBox.CanGrow = true;
+            this.naupliiNettoSumFunctionTextBox.Format = "{0:N0}";
             this.naupliiNettoSumFunctionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(33.064689636230469D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.naupliiNettoSumFunctionTextBox.Name = "naupliiNettoSumFunctionTextBox";
             this.naupliiNettoSumFunctionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -919,6 +949,7 @@ namespace HatcheryReportLibrary
             // femaleSumFunctionTextBox1
             // 
             this.femaleSumFunctionTextBox1.CanGrow = true;
+            this.femaleSumFunctionTextBox1.Format = "{0:N0}";
             this.femaleSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(2.1526949405670166D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.femaleSumFunctionTextBox1.Name = "femaleSumFunctionTextBox1";
             this.femaleSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -928,6 +959,7 @@ namespace HatcheryReportLibrary
             // maleSumFunctionTextBox1
             // 
             this.maleSumFunctionTextBox1.CanGrow = true;
+            this.maleSumFunctionTextBox1.Format = "{0:N0}";
             this.maleSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(3.2186257839202881D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.maleSumFunctionTextBox1.Name = "maleSumFunctionTextBox1";
             this.maleSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -937,6 +969,7 @@ namespace HatcheryReportLibrary
             // totalPopulationSumFunctionTextBox1
             // 
             this.totalPopulationSumFunctionTextBox1.CanGrow = true;
+            this.totalPopulationSumFunctionTextBox1.Format = "{0:N0}";
             this.totalPopulationSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(4.2845563888549805D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.totalPopulationSumFunctionTextBox1.Name = "totalPopulationSumFunctionTextBox1";
             this.totalPopulationSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -946,6 +979,7 @@ namespace HatcheryReportLibrary
             // deadFemaleSumFunctionTextBox1
             // 
             this.deadFemaleSumFunctionTextBox1.CanGrow = true;
+            this.deadFemaleSumFunctionTextBox1.Format = "{0:N0}";
             this.deadFemaleSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.350487232208252D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.deadFemaleSumFunctionTextBox1.Name = "deadFemaleSumFunctionTextBox1";
             this.deadFemaleSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -955,6 +989,7 @@ namespace HatcheryReportLibrary
             // deadMaleSumFunctionTextBox1
             // 
             this.deadMaleSumFunctionTextBox1.CanGrow = true;
+            this.deadMaleSumFunctionTextBox1.Format = "{0:N0}";
             this.deadMaleSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.4164180755615234D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.deadMaleSumFunctionTextBox1.Name = "deadMaleSumFunctionTextBox1";
             this.deadMaleSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -964,6 +999,7 @@ namespace HatcheryReportLibrary
             // mortalitySumFunctionTextBox1
             // 
             this.mortalitySumFunctionTextBox1.CanGrow = true;
+            this.mortalitySumFunctionTextBox1.Format = "{0:N0}";
             this.mortalitySumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(7.4823489189147949D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.mortalitySumFunctionTextBox1.Name = "mortalitySumFunctionTextBox1";
             this.mortalitySumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -973,6 +1009,7 @@ namespace HatcheryReportLibrary
             // pHSumFunctionTextBox1
             // 
             this.pHSumFunctionTextBox1.CanGrow = true;
+            this.pHSumFunctionTextBox1.Format = "{0:N0}";
             this.pHSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.5482797622680664D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.pHSumFunctionTextBox1.Name = "pHSumFunctionTextBox1";
             this.pHSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -982,6 +1019,7 @@ namespace HatcheryReportLibrary
             // dOSumFunctionTextBox1
             // 
             this.dOSumFunctionTextBox1.CanGrow = true;
+            this.dOSumFunctionTextBox1.Format = "{0:N0}";
             this.dOSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(9.6142110824584961D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.dOSumFunctionTextBox1.Name = "dOSumFunctionTextBox1";
             this.dOSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -991,6 +1029,7 @@ namespace HatcheryReportLibrary
             // salinitySumFunctionTextBox1
             // 
             this.salinitySumFunctionTextBox1.CanGrow = true;
+            this.salinitySumFunctionTextBox1.Format = "{0:N0}";
             this.salinitySumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(10.680141448974609D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.salinitySumFunctionTextBox1.Name = "salinitySumFunctionTextBox1";
             this.salinitySumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1000,6 +1039,7 @@ namespace HatcheryReportLibrary
             // matTempSumFunctionTextBox1
             // 
             this.matTempSumFunctionTextBox1.CanGrow = true;
+            this.matTempSumFunctionTextBox1.Format = "{0:N0}";
             this.matTempSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(11.746072769165039D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.matTempSumFunctionTextBox1.Name = "matTempSumFunctionTextBox1";
             this.matTempSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1009,6 +1049,7 @@ namespace HatcheryReportLibrary
             // hatcTempSumFunctionTextBox1
             // 
             this.hatcTempSumFunctionTextBox1.CanGrow = true;
+            this.hatcTempSumFunctionTextBox1.Format = "{0:N0}";
             this.hatcTempSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(12.812003135681152D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.hatcTempSumFunctionTextBox1.Name = "hatcTempSumFunctionTextBox1";
             this.hatcTempSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1018,6 +1059,7 @@ namespace HatcheryReportLibrary
             // squidInSumFunctionTextBox1
             // 
             this.squidInSumFunctionTextBox1.CanGrow = true;
+            this.squidInSumFunctionTextBox1.Format = "{0:N0}";
             this.squidInSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(13.877934455871582D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.squidInSumFunctionTextBox1.Name = "squidInSumFunctionTextBox1";
             this.squidInSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1027,6 +1069,7 @@ namespace HatcheryReportLibrary
             // squidUsedSumFunctionTextBox1
             // 
             this.squidUsedSumFunctionTextBox1.CanGrow = true;
+            this.squidUsedSumFunctionTextBox1.Format = "{0:N0}";
             this.squidUsedSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(14.943864822387695D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.squidUsedSumFunctionTextBox1.Name = "squidUsedSumFunctionTextBox1";
             this.squidUsedSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1036,6 +1079,7 @@ namespace HatcheryReportLibrary
             // squidiBalanceSumFunctionTextBox1
             // 
             this.squidiBalanceSumFunctionTextBox1.CanGrow = true;
+            this.squidiBalanceSumFunctionTextBox1.Format = "{0:N0}";
             this.squidiBalanceSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(16.009796142578125D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.squidiBalanceSumFunctionTextBox1.Name = "squidiBalanceSumFunctionTextBox1";
             this.squidiBalanceSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1045,6 +1089,7 @@ namespace HatcheryReportLibrary
             // polychaeteInSumFunctionTextBox1
             // 
             this.polychaeteInSumFunctionTextBox1.CanGrow = true;
+            this.polychaeteInSumFunctionTextBox1.Format = "{0:N0}";
             this.polychaeteInSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(17.075725555419922D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.polychaeteInSumFunctionTextBox1.Name = "polychaeteInSumFunctionTextBox1";
             this.polychaeteInSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1054,6 +1099,7 @@ namespace HatcheryReportLibrary
             // polychaeteUsedSumFunctionTextBox1
             // 
             this.polychaeteUsedSumFunctionTextBox1.CanGrow = true;
+            this.polychaeteUsedSumFunctionTextBox1.Format = "{0:N0}";
             this.polychaeteUsedSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(18.141656875610352D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.polychaeteUsedSumFunctionTextBox1.Name = "polychaeteUsedSumFunctionTextBox1";
             this.polychaeteUsedSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1063,6 +1109,7 @@ namespace HatcheryReportLibrary
             // polychaeteBalanceSumFunctionTextBox1
             // 
             this.polychaeteBalanceSumFunctionTextBox1.CanGrow = true;
+            this.polychaeteBalanceSumFunctionTextBox1.Format = "{0:N0}";
             this.polychaeteBalanceSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(19.207588195800781D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.polychaeteBalanceSumFunctionTextBox1.Name = "polychaeteBalanceSumFunctionTextBox1";
             this.polychaeteBalanceSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1072,6 +1119,7 @@ namespace HatcheryReportLibrary
             // formaldehydeSumFunctionTextBox1
             // 
             this.formaldehydeSumFunctionTextBox1.CanGrow = true;
+            this.formaldehydeSumFunctionTextBox1.Format = "{0:N0}";
             this.formaldehydeSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(20.273519515991211D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.formaldehydeSumFunctionTextBox1.Name = "formaldehydeSumFunctionTextBox1";
             this.formaldehydeSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1081,6 +1129,7 @@ namespace HatcheryReportLibrary
             // eDTASumFunctionTextBox1
             // 
             this.eDTASumFunctionTextBox1.CanGrow = true;
+            this.eDTASumFunctionTextBox1.Format = "{0:N0}";
             this.eDTASumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(21.339448928833008D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.eDTASumFunctionTextBox1.Name = "eDTASumFunctionTextBox1";
             this.eDTASumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1090,6 +1139,7 @@ namespace HatcheryReportLibrary
             // treflanSumFunctionTextBox2
             // 
             this.treflanSumFunctionTextBox2.CanGrow = true;
+            this.treflanSumFunctionTextBox2.Format = "{0:N0}";
             this.treflanSumFunctionTextBox2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(22.405380249023438D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.treflanSumFunctionTextBox2.Name = "treflanSumFunctionTextBox2";
             this.treflanSumFunctionTextBox2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1099,6 +1149,7 @@ namespace HatcheryReportLibrary
             // iodineSumFunctionTextBox1
             // 
             this.iodineSumFunctionTextBox1.CanGrow = true;
+            this.iodineSumFunctionTextBox1.Format = "{0:N0}";
             this.iodineSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(23.471311569213867D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.iodineSumFunctionTextBox1.Name = "iodineSumFunctionTextBox1";
             this.iodineSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1108,6 +1159,7 @@ namespace HatcheryReportLibrary
             // treflanSumFunctionTextBox3
             // 
             this.treflanSumFunctionTextBox3.CanGrow = true;
+            this.treflanSumFunctionTextBox3.Format = "{0:N0}";
             this.treflanSumFunctionTextBox3.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(24.537242889404297D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.treflanSumFunctionTextBox3.Name = "treflanSumFunctionTextBox3";
             this.treflanSumFunctionTextBox3.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1117,6 +1169,7 @@ namespace HatcheryReportLibrary
             // vitaminSumFunctionTextBox1
             // 
             this.vitaminSumFunctionTextBox1.CanGrow = true;
+            this.vitaminSumFunctionTextBox1.Format = "{0:N0}";
             this.vitaminSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(25.603172302246094D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.vitaminSumFunctionTextBox1.Name = "vitaminSumFunctionTextBox1";
             this.vitaminSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1126,6 +1179,7 @@ namespace HatcheryReportLibrary
             // matedSumFunctionTextBox1
             // 
             this.matedSumFunctionTextBox1.CanGrow = true;
+            this.matedSumFunctionTextBox1.Format = "{0:N0}";
             this.matedSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(26.669103622436523D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.matedSumFunctionTextBox1.Name = "matedSumFunctionTextBox1";
             this.matedSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1135,6 +1189,7 @@ namespace HatcheryReportLibrary
             // maturedSumFunctionTextBox1
             // 
             this.maturedSumFunctionTextBox1.CanGrow = true;
+            this.maturedSumFunctionTextBox1.Format = "{0:N0}";
             this.maturedSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(27.735034942626953D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.maturedSumFunctionTextBox1.Name = "maturedSumFunctionTextBox1";
             this.maturedSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1144,6 +1199,7 @@ namespace HatcheryReportLibrary
             // spawnedSumFunctionTextBox1
             // 
             this.spawnedSumFunctionTextBox1.CanGrow = true;
+            this.spawnedSumFunctionTextBox1.Format = "{0:N0}";
             this.spawnedSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(28.800966262817383D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.spawnedSumFunctionTextBox1.Name = "spawnedSumFunctionTextBox1";
             this.spawnedSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1153,6 +1209,7 @@ namespace HatcheryReportLibrary
             // eggSumFunctionTextBox1
             // 
             this.eggSumFunctionTextBox1.CanGrow = true;
+            this.eggSumFunctionTextBox1.Format = "{0:N0}";
             this.eggSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(29.86689567565918D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.eggSumFunctionTextBox1.Name = "eggSumFunctionTextBox1";
             this.eggSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1162,15 +1219,17 @@ namespace HatcheryReportLibrary
             // fRSumFunctionTextBox1
             // 
             this.fRSumFunctionTextBox1.CanGrow = true;
+            this.fRSumFunctionTextBox1.Format = "{0:N0}";
             this.fRSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(30.932826995849609D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.fRSumFunctionTextBox1.Name = "fRSumFunctionTextBox1";
             this.fRSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
             this.fRSumFunctionTextBox1.StyleName = "Data";
-            this.fRSumFunctionTextBox1.Value = "= Sum(Fields.FR)";
+            this.fRSumFunctionTextBox1.Value = "= AVG(Fields.FR)";
             // 
             // naupliiBrutoSumFunctionTextBox1
             // 
             this.naupliiBrutoSumFunctionTextBox1.CanGrow = true;
+            this.naupliiBrutoSumFunctionTextBox1.Format = "{0:N0}";
             this.naupliiBrutoSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(31.998758316040039D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.naupliiBrutoSumFunctionTextBox1.Name = "naupliiBrutoSumFunctionTextBox1";
             this.naupliiBrutoSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1180,6 +1239,7 @@ namespace HatcheryReportLibrary
             // naupliiNettoSumFunctionTextBox1
             // 
             this.naupliiNettoSumFunctionTextBox1.CanGrow = true;
+            this.naupliiNettoSumFunctionTextBox1.Format = "{0:N0}";
             this.naupliiNettoSumFunctionTextBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(33.064689636230469D), Telerik.Reporting.Drawing.Unit.Inch(0.02083333395421505D));
             this.naupliiNettoSumFunctionTextBox1.Name = "naupliiNettoSumFunctionTextBox1";
             this.naupliiNettoSumFunctionTextBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1.0450974702835083D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
@@ -1224,7 +1284,7 @@ namespace HatcheryReportLibrary
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(37.328411102294922D), Telerik.Reporting.Drawing.Unit.Inch(0.787401556968689D));
             this.titleTextBox.StyleName = "Title";
-            this.titleTextBox.Value = "CompleteBroodstockReport";
+            this.titleTextBox.Value = "Complete Broodstock Report";
             // 
             // detail
             // 

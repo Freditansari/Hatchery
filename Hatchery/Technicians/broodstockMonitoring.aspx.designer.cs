@@ -229,6 +229,15 @@ namespace Hatchery {
         protected global::Telerik.Web.UI.RadNumericTextBox treflantexbox;
         
         /// <summary>
+        /// maturedTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadNumericTextBox maturedTextBox;
+        
+        /// <summary>
         /// matedTextbox control.
         /// </summary>
         /// <remarks>
@@ -236,15 +245,6 @@ namespace Hatchery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadNumericTextBox matedTextbox;
-        
-        /// <summary>
-        /// mkTextbox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox mkTextbox;
         
         /// <summary>
         /// SpawnTextbox control.
@@ -274,13 +274,13 @@ namespace Hatchery {
         protected global::Telerik.Web.UI.RadNumericTextBox NaupliiTextbox;
         
         /// <summary>
-        /// RadNumericTextBox1 control.
+        /// naupliiNettoTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNumericTextBox RadNumericTextBox1;
+        protected global::Telerik.Web.UI.RadNumericTextBox naupliiNettoTextBox;
         
         /// <summary>
         /// FlushTextbox control.
@@ -319,13 +319,13 @@ namespace Hatchery {
         protected global::System.Web.UI.WebControls.Button SubmitButton;
         
         /// <summary>
-        /// outputLabel control.
+        /// errorLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label outputLabel;
+        protected global::System.Web.UI.WebControls.Label errorLabel;
         
         /// <summary>
         /// BatchDataSource control.

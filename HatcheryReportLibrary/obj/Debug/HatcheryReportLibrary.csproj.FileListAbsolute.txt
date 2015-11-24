@@ -12,4 +12,5 @@ C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReportLibr
 C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReportLibrary\obj\Debug\HatcheryReportLibrary.dll.licenses
 C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReportLibrary\obj\Debug\HatcheryReportLibrary.dll
 C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReportLibrary\obj\Debug\HatcheryReportLibrary.pdb
-C:\Users\fredy\documents\visual studio 2012\Projects\Hatchery\HatcheryReportLibrary\obj\Debug\HatcheryReportLibrary.csprojResolveAssemblyReference.cache
+C:\Users\fredy\Documents\Visual Studio 2012\Projects\Hatchery\HatcheryReportLibrary\obj\Debug\HatcheryReportLibrary.csprojResolveAssemblyReference.cache
+C:\Users\fredy\Documents\Visual Studio 2012\Projects\Hatchery\HatcheryReportLibrary\obj\Debug\HatcheryReportLibrary.BroodstockWaterParameter2.resources

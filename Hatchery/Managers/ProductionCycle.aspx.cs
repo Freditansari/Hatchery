@@ -32,6 +32,7 @@ namespace Hatchery
             //    Response.Redirect("~/Account/Login.aspx", true);
             //}
             StartDateDatePicker.SelectedDate = DateTime.Now;
+            UserIDLabel.Text = User.Identity.Name.ToString();
         }
 
         protected void SubmitButton_Click(object sender, EventArgs e)
