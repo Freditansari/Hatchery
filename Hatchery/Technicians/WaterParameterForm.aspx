@@ -146,7 +146,7 @@
         <td>User ID:</td>
         <td></td>
         <td colspan="2">
-            <asp:TextBox ID="TxtUserID" runat="server" MaxLength="0" />
+            <asp:TextBox ID="TxtUserID" runat="server" MaxLength="0" ReadOnly="True" />
         </td>
     </tr>
     <tr>
