@@ -92,9 +92,9 @@
                                         </telerik:RadMenuItem>
                                         <telerik:RadMenuItem runat="server" Text="Reports" NavigateUrl="~/Managers/ReportWindows.aspx">
                                         </telerik:RadMenuItem>
-                                        <telerik:RadMenuItem runat="server" Text="Utilities" NavigateUrl="~/WebForm8.aspx">
+                                        <telerik:RadMenuItem runat="server" Text="Utilities">
                                             <Items>
-                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/WebForm8.aspx" Text="placeholder">
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/RoleManagement.aspx" Text="Role Management">
                                                 </telerik:RadMenuItem>
                                             </Items>
                                         </telerik:RadMenuItem>

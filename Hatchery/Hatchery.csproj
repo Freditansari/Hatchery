@@ -258,6 +258,8 @@
     <Content Include="Managers\BroodstockWaterParameter2.aspx" />
     <Content Include="Managers\BroodstockwaterparameterReport.aspx" />
     <Content Include="Managers\CompleteBroodstockReportWindow.aspx" />
+    <Content Include="Managers\CompletePLReport.aspx" />
+    <Content Include="Managers\PLWaterParameterReport.aspx" />
     <Content Include="packages.config" />
     <Content Include="Technicians\Broodstock.aspx" />
     <Content Include="Technicians\BroodstockBatch.aspx" />
@@ -270,6 +272,7 @@
     <Content Include="WebForm10.aspx" />
     <Content Include="Managers\NaupliiEfficiencyReport.aspx" />
     <Content Include="Managers\ReportWindows.aspx" />
+    <Content Include="Managers\RoleManagement.aspx" />
     <EntityDeploy Include="HatcheryDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HatcheryDataModel.Designer.cs</LastGenOutput>
@@ -437,6 +440,20 @@
     <Compile Include="Managers\CompleteBroodstockReportWindow.aspx.designer.cs">
       <DependentUpon>CompleteBroodstockReportWindow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Managers\CompletePLReport.aspx.cs">
+      <DependentUpon>CompletePLReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\CompletePLReport.aspx.designer.cs">
+      <DependentUpon>CompletePLReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\PLWaterParameterReport.aspx.cs">
+      <DependentUpon>PLWaterParameterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\PLWaterParameterReport.aspx.designer.cs">
+      <DependentUpon>PLWaterParameterReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterBatch.cs">
       <DependentUpon>HatcheryDataModel.tt</DependentUpon>
     </Compile>
@@ -550,6 +567,13 @@
     </Compile>
     <Compile Include="Managers\ReportWindows.aspx.designer.cs">
       <DependentUpon>ReportWindows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\RoleManagement.aspx.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers\RoleManagement.aspx.designer.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

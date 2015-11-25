@@ -13,11 +13,13 @@
             <td>
                  <telerik:RadMenu ID="RadMenu2" Runat="server">
                     <Items>
-                        <telerik:RadMenuItem runat="server" Text="Nauplii Reports">
+                        <telerik:RadMenuItem runat="server" Text="Broodstocks Reports">
                             <Items>
                                 <telerik:RadMenuItem runat="server" Text="Nauplii Efficiency" NavigateUrl="~/Managers/NaupliiEfficiencyReport.aspx" Target="FrameReport">
                                 </telerik:RadMenuItem>
                                 <telerik:RadMenuItem runat="server" Text="Broodstock Water Parameter" NavigateUrl="~/Managers/BroodstockwaterparameterReport.aspx" Target="FrameReport">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/BroodstockWaterParameter2.aspx" Target="FrameReport" Text="Broodstock Water Parameter 2">
                                 </telerik:RadMenuItem>
                                 <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/CompleteBroodstockReportWindow.aspx" Target="FrameReport" Text="Complete Broodstock Report">
                                 </telerik:RadMenuItem>
@@ -25,11 +27,11 @@
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" Text="PL Reports">
                             <Items>
-                                <telerik:RadMenuItem runat="server" Text="Module Reports">
+                                <telerik:RadMenuItem runat="server" Text="PL Water Parameter" NavigateUrl="~/Managers/PLWaterParameterReport.aspx" Target="FrameReport">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/CompletePLReport.aspx" Target="FrameReport" Text="Complete PL Report">
                                 </telerik:RadMenuItem>
                             </Items>
-                        </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" Text="Root RadMenuItem3">
                         </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenu>

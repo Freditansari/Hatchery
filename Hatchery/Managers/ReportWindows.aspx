@@ -27,7 +27,9 @@
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" Text="PL Reports">
                             <Items>
-                                <telerik:RadMenuItem runat="server" Text="Module Reports">
+                                <telerik:RadMenuItem runat="server" Text="PL Water Parameter" NavigateUrl="~/Managers/PLWaterParameterReport.aspx" Target="FrameReport">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Managers/CompletePLReport.aspx" Target="FrameReport" Text="Complete PL Report">
                                 </telerik:RadMenuItem>
                             </Items>
                         </telerik:RadMenuItem>

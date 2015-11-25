@@ -72,6 +72,12 @@
     <Compile Include="CompleteBroodstockReport.Designer.cs">
       <DependentUpon>CompleteBroodstockReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompletePLReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CompletePLReport.Designer.cs">
+      <DependentUpon>CompletePLReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="DailyPostLarvaeReport.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="PHDOBroodstockReport.Designer.cs">
       <DependentUpon>PHDOBroodstockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLWaterParameter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PLWaterParameter.Designer.cs">
+      <DependentUpon>PLWaterParameter.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -136,6 +148,9 @@
     <EmbeddedResource Include="CompleteBroodstockReport.resx">
       <DependentUpon>CompleteBroodstockReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CompletePLReport.resx">
+      <DependentUpon>CompletePLReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DailyPostLarvaeReport.resx">
       <DependentUpon>DailyPostLarvaeReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PHDOBroodstockReport.resx">
       <DependentUpon>PHDOBroodstockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLWaterParameter.resx">
+      <DependentUpon>PLWaterParameter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>

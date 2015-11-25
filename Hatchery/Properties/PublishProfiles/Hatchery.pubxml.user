@@ -61,16 +61,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/11/2015 10:51:33</publishTime>
     </File>
     <File Include="bin/Hatchery.dll">
-      <publishTime>11/24/2015 13:12:39</publishTime>
+      <publishTime>11/25/2015 13:14:07</publishTime>
     </File>
     <File Include="bin/Hatchery.pdb">
-      <publishTime>11/24/2015 13:12:39</publishTime>
+      <publishTime>11/25/2015 13:14:07</publishTime>
     </File>
     <File Include="bin/HatcheryReportLibrary.dll">
-      <publishTime>11/24/2015 12:47:01</publishTime>
+      <publishTime>11/25/2015 12:47:02</publishTime>
     </File>
     <File Include="bin/HatcheryReportLibrary.pdb">
-      <publishTime>11/24/2015 12:47:01</publishTime>
+      <publishTime>11/25/2015 12:47:02</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>11/11/2015 10:51:34</publishTime>
@@ -375,20 +375,32 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/orderedList9.png">
       <publishTime>11/09/2015 12:04:52</publishTime>
     </File>
+    <File Include="Managers/BroodstockWaterParameter2.aspx">
+      <publishTime>11/24/2015 15:09:06</publishTime>
+    </File>
     <File Include="Managers/BroodstockwaterparameterReport.aspx">
       <publishTime>11/20/2015 11:38:58</publishTime>
     </File>
     <File Include="Managers/CompleteBroodstockReportWindow.aspx">
       <publishTime>11/20/2015 13:56:20</publishTime>
     </File>
+    <File Include="Managers/CompletePLReport.aspx">
+      <publishTime>11/25/2015 11:17:46</publishTime>
+    </File>
     <File Include="Managers/NaupliiEfficiencyReport.aspx">
       <publishTime>11/20/2015 11:30:46</publishTime>
+    </File>
+    <File Include="Managers/PLWaterParameterReport.aspx">
+      <publishTime>11/25/2015 12:19:12</publishTime>
     </File>
     <File Include="Managers/ProductionCycle.aspx">
       <publishTime>11/11/2015 14:21:27</publishTime>
     </File>
     <File Include="Managers/ReportWindows.aspx">
-      <publishTime>11/20/2015 13:53:49</publishTime>
+      <publishTime>11/25/2015 12:26:12</publishTime>
+    </File>
+    <File Include="Managers/RoleManagement.aspx">
+      <publishTime>11/25/2015 13:03:00</publishTime>
     </File>
     <File Include="Managers/WebForm8.aspx">
       <publishTime>11/17/2015 13:57:23</publishTime>
@@ -484,7 +496,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2015 12:04:59</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>11/20/2015 11:45:33</publishTime>
+      <publishTime>11/25/2015 12:48:52</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>11/09/2015 12:05:15</publishTime>
@@ -505,7 +517,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/24/2015 09:35:58</publishTime>
     </File>
     <File Include="Technicians/WaterParameterForm.aspx">
-      <publishTime>11/17/2015 16:07:35</publishTime>
+      <publishTime>11/25/2015 09:20:00</publishTime>
     </File>
     <File Include="ViewSwitcher.ascx">
       <publishTime>11/09/2015 12:05:14</publishTime>
@@ -514,7 +526,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/17/2015 14:39:12</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/24/2015 12:48:36</publishTime>
+      <publishTime>11/25/2015 12:47:22</publishTime>
     </File>
     <File Include="WebForm10.aspx">
       <publishTime>11/19/2015 09:34:35</publishTime>
