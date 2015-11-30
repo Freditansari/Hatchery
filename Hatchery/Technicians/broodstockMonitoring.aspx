@@ -118,7 +118,7 @@
         <tr>
             <td class="auto-style6">Salinity</td>
             <td class="auto-style7">
-                <telerik:RadNumericTextBox ID="SalinityTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Width="160px" MaxValue="100" MinValue="0">
+                <telerik:RadNumericTextBox ID="SalinityTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Width="160px" MaxValue="100" MinValue="0" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -126,12 +126,12 @@
         <tr>
             <td class="auto-style2">Maturation Temp(°C)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="MaturationTempTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="100" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="MaturationTempTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="100" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
 
                     <td class="auto-style2">Hatching Temp(°C)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="HatchingTempTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="100" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="HatchingTempTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="100" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             </td>
@@ -140,7 +140,7 @@
         <tr>
             <td class="auto-style3">DO</td>
             <td class="auto-style4">
-                <telerik:RadNumericTextBox ID="DOTextBOx" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="10" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="DOTextBOx" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="10" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -150,7 +150,7 @@
                 
                 pH</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="PHTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="14" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="PHTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="14" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -162,7 +162,7 @@
                 
             </td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="PolycheateINTextBox" Runat="server">
+                <telerik:RadNumericTextBox ID="PolycheateINTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -170,7 +170,7 @@
                 
                 Squid in</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="SquidInTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="99999999" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="SquidInTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="99999999" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -180,7 +180,7 @@
                 
                 Polycheate Used</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="PolycheateUsedTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="PolycheateUsedTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -188,7 +188,7 @@
                 
                 Squid Used</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="squidUsedTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="999999999" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="squidUsedTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="999999999" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -199,7 +199,7 @@
                 
                 Polycheate Balance</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="PolycheateBalanceTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="PolycheateBalanceTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -207,7 +207,7 @@
                 
                 Squid Balance</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="SquidBalanceTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="999999999" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="SquidBalanceTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MaxValue="999999999" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -217,7 +217,7 @@
                 
                 FR (%)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="FRTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="FRTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -255,7 +255,7 @@
                 
                  Formaldehyde (ml)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="FormalDehydeTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MinValue="0" Width="160px">
+                <telerik:RadNumericTextBox ID="FormalDehydeTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" MinValue="0" Width="160px" Value="0">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -265,7 +265,7 @@
                 
                 Iodine</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="IodineTextBox" Runat="server">
+                <telerik:RadNumericTextBox ID="IodineTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -273,7 +273,7 @@
                 
                  Vitamins</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="VitaminTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="VitaminTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
           
@@ -285,7 +285,7 @@
                 
                  Treflans</td>
             <td class="auto-style5">
-                 <telerik:RadNumericTextBox ID="treflantexbox" Runat="server">
+                 <telerik:RadNumericTextBox ID="treflantexbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             <td>
                  &nbsp;</td>
@@ -314,7 +314,7 @@
                 
                 Matured(pcs)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="maturedTextBox" Runat="server">
+                <telerik:RadNumericTextBox ID="maturedTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -332,7 +332,7 @@
                 
                 Mated(pcs)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="matedTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="matedTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -350,7 +350,7 @@
                 
                 Spawn(pcs)</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="SpawnTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="SpawnTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -358,7 +358,7 @@
                 
                  Egg</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="eggTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="eggTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -368,7 +368,7 @@
                 
                 Nauplii Bruto</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="NaupliiTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="NaupliiTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
@@ -376,7 +376,7 @@
                 
                  Nauplii Netto</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="naupliiNettoTextBox" Runat="server">
+                <telerik:RadNumericTextBox ID="naupliiNettoTextBox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
             
@@ -386,7 +386,7 @@
                 
                 flush</td>
             <td class="auto-style5">
-                <telerik:RadNumericTextBox ID="FlushTextbox" Runat="server">
+                <telerik:RadNumericTextBox ID="FlushTextbox" Runat="server" Culture="en-US" DbValueFactor="1" LabelWidth="64px" Value="0" Width="160px">
                 </telerik:RadNumericTextBox>
             </td>
 
