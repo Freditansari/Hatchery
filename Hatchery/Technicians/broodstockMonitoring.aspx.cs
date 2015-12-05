@@ -14,7 +14,11 @@ namespace Hatchery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BroodstockLogDateDatePicker.SelectedDate = DateTime.Now;
+            if (!Page.IsPostBack)
+            {
+                BroodstockLogDateDatePicker.SelectedDate = DateTime.Now;    
+            }
+            
             UserIDLabel.Text = User.Identity.Name.ToString();
         }
 

@@ -138,26 +138,33 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.ReportViewer.Html5.WebForms, Version=9.2.15.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
-    <Reference Include="Telerik.Web.UI">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\Telerik.Web.UI.dll</HintPath>
+    <Reference Include="Telerik.Web.UI, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\Telerik.Web.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Core">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Flow">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Spreadsheet">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Maths">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\AdditionalLibraries\Bin45\Telerik.Windows.Maths.dll</HintPath>
+    <Reference Include="Telerik.Windows.Maths, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\AdditionalLibraries\Bin45\Telerik.Windows.Maths.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Zip">
-      <HintPath>..\lib\RCAJAX\2015.3.930.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+    <Reference Include="Telerik.Windows.Zip, Version=2015.3.1111.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2015.3.1111.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>

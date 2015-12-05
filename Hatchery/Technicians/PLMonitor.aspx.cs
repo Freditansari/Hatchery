@@ -11,7 +11,11 @@ namespace Hatchery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DatePicker.SelectedDate = DateTime.Now;
+            if (!Page.IsPostBack)
+            {
+                DatePicker.SelectedDate = DateTime.Now;
+            }
+            
             TxtUserID.Text = User.Identity.Name.ToString();
          
         }

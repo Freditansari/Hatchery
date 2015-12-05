@@ -11,7 +11,10 @@ namespace Hatchery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            WaterParameterDatePicker.SelectedDate = DateTime.Now;
+            if (!Page.IsPostBack)
+            {
+                WaterParameterDatePicker.SelectedDate = DateTime.Now;
+            }
             TxtUserID.Text = User.Identity.Name.ToString();
         }
 
