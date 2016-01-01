@@ -44,13 +44,14 @@ namespace Hatchery
             {
                 string cs = ConfigurationManager.ConnectionStrings["HatcheryConnectionString"].ConnectionString;
 
-               
+               //DateTime selectedStartDate =Convert.ToDateTime( StartDateDatePicker.SelectedDate.ToString().Substring(0,10));
+                DateTime selectedStartDate =Convert.ToDateTime( StartDateDatePicker.SelectedDate);
                 
                 System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(cs);
 
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT INTO [ProductionCycle] ([ModuleName], [StartDate], [Nauplii], [Batch], [isInProduction],  [UserID]) VALUES ('"+ModuleDropDownList.SelectedValue+"', '"+StartDateDatePicker.SelectedDate.ToString().Substring(0,10)+"', '"+NaupliiTextbox.Text+"', '"+BatchNumberDropdown.SelectedValue+"', 'True', '"+UserIDLabel.Text+"')";
+                cmd.CommandText = "INSERT INTO [ProductionCycle] ([ModuleName], [StartDate], [Nauplii], [Batch], [isInProduction],  [UserID]) VALUES ('"+ModuleDropDownList.SelectedValue+"', '"+selectedStartDate.ToShortDateString()+"', '"+NaupliiTextbox.Text+"', '"+BatchNumberDropdown.SelectedValue+"', 'True', '"+UserIDLabel.Text+"')";
                 cmd.Connection = sqlConnection1;
 
                 sqlConnection1.Open();
