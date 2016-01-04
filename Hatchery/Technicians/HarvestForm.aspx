@@ -71,10 +71,11 @@
             <td>Date:</td>
             <td></td>
             <td>
-                <asp:TextBox ID="TxtDate" runat="server" />
+                <%--<asp:TextBox ID="TxtDate" runat="server" />--%>
+                <telerik:RadDatePicker ID="HarvestDatePicker" runat="server"></telerik:RadDatePicker>
             </td>
             <td>
-                <asp:CompareValidator ID="CompvDate" runat="server" ControlToValidate="TxtDate" Display="Dynamic" ErrorMessage="Invalid date!" Operator="DataTypeCheck" Type="Date" />
+                <asp:CompareValidator ID="CompvDate" runat="server" ControlToValidate="HarvestDatePicker" Display="Dynamic" ErrorMessage="Invalid date!" Operator="DataTypeCheck" Type="Date" />
             </td>
         </tr>
         <tr>

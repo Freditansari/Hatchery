@@ -112,13 +112,13 @@ namespace Hatchery {
         protected global::System.Web.UI.WebControls.CompareValidator CompvHarvestedPopulation;
         
         /// <summary>
-        /// TxtDate control.
+        /// HarvestDatePicker control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDate;
+        protected global::Telerik.Web.UI.RadDatePicker HarvestDatePicker;
         
         /// <summary>
         /// CompvDate control.

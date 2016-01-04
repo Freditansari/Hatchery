@@ -11,7 +11,8 @@ namespace Hatchery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TxtDate.Text = DateTime.Now.Date.ToString().Substring(0,10);
+            //TxtDate.Text = DateTime.Now.Date.ToString().Substring(0,10);
+            HarvestDatePicker.SelectedDate = DateTime.Now.Date;
             TxtTime.Text = DateTime.Now.TimeOfDay.ToString();
             TxtUserid.Text = User.Identity.Name.ToString();
         }
@@ -28,7 +29,8 @@ namespace Hatchery
                 newHarvest.DOC = Convert.ToInt32(TxtDoc.Text);
                 newHarvest.Stage = StagesDDL.SelectedValue;
                 newHarvest.HarvestedPopulation = Convert.ToInt32( TxtHarvestedPopulation.Text);
-                newHarvest.Date = Convert.ToDateTime(TxtDate.Text);
+                //newHarvest.Date = Convert.ToDateTime(TxtDate.Text);
+                newHarvest.Date = HarvestDatePicker.SelectedDate;
                 newHarvest.Time = TimeSpan.Parse(TxtTime.Text);
                 newHarvest.userid = TxtUserid.Text;
 
